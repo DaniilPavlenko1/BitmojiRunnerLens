@@ -259,6 +259,7 @@
     "":
       gameController: !<reference.ScriptComponent> f4f88c7c-2688-41e9-9db2-8f1e96af7f03
       livesService: !<reference.ScriptComponent> 342123b6-491d-4511-bbbc-4b48ecd0e51f
+      playerJump: !<reference.ScriptComponent> 4f636fc2-20dc-44d2-83e6-b136a2af5f5c
       playerRoot: !<reference.SceneObject> 275a952d-f181-44fd-8ebf-aec4ebdc314a
       obstacles: !<reference.SceneObject[]>
         - !<reference> 4ca81d42-415c-4005-8f7f-540d272d789d
@@ -398,14 +399,14 @@
   Enabled: true
   ScriptAsset: !<reference> b9b76c9e-d834-4fc4-9a92-4a343572e038
   ScriptInputsDefault:
-    jumpDuration: true
+    {}
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
       playerRoot: !<reference.SceneObject> 275a952d-f181-44fd-8ebf-aec4ebdc314a
       jumpHeight: !<float> 100.000000
-      jumpDuration: 0.500000
+      jumpDuration: !<float> 1.000000
   ScriptTypes:
     "":
       {}

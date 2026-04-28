@@ -32,6 +32,7 @@
     invulnerabilityTime: false
     livesService: false
     obstacles: false
+    playerJump: false
     playerRoot: false
     playerZ: false
   ScriptTypesHidden:
@@ -45,6 +46,7 @@
   DefaultScriptInputs:
     - gameController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       livesService: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      playerJump: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       playerRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       obstacles: !<reference.SceneObject[]>
         []

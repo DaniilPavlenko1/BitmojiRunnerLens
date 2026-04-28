@@ -2,6 +2,7 @@
 
 //@input Component.ScriptComponent gameController
 //@input Component.ScriptComponent livesService
+//@input Component.ScriptComponent playerJump
 //@input SceneObject playerRoot
 //@input SceneObject[] obstacles
 
@@ -41,6 +42,10 @@ script.createEvent("UpdateEvent").bind(function () {
         var dx = Math.abs(obstaclePos.x - playerPos.x);
 
         if (dz < script.hitDistanceZ && dx < script.hitDistanceX) {
+            if (script.playerJump && script.playerJump.isJumping()) {
+                print("Jumped over obstacle!");
+                return;
+            }
             print("Hit obstacle!");
 
             invulnerabilityTimer = script.invulnerabilityTime;
@@ -48,7 +53,7 @@ script.createEvent("UpdateEvent").bind(function () {
             var livesLeft = script.livesService.takeDamage();
 
             // move obstacle away so it cannot hit again immediately
-            obstaclePos.z -= 4000;
+            obstaclePos.z = -4800;
             obstacle.getTransform().setLocalPosition(obstaclePos);
 
             if (livesLeft <= 0) {
