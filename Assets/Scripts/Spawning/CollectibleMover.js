@@ -27,6 +27,16 @@ function respawnCollectible(collectible) {
     transform.setLocalPosition(pos);
 }
 
+script.resetCollectibles = function () {
+    for (var i = 0; i < script.collectibles.length; i++) {
+        if (script.collectibles[i]) {
+            respawnCollectible(script.collectibles[i]);
+        }
+    }
+
+    print("Collectibles reset");
+};
+
 script.createEvent("UpdateEvent").bind(function () {
     if (!script.gameController || !script.gameController.isRunning()) {
         return;

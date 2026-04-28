@@ -28,6 +28,10 @@ script.gameOver = function () {
     setState(GameState.GAME_OVER);
 };
 
+script.isGameOver = function () {
+    return currentState === GameState.GAME_OVER;
+};
+
 script.resetGame = function () {
     setState(GameState.READY);
 };
@@ -38,6 +42,14 @@ script.getCurrentState = function () {
 
 script.isRunning = function () {
     return currentState === GameState.RUNNING;
+};
+
+script.isReady = function () {
+    return currentState === GameState.READY;
+};
+
+script.isGameOver = function () {
+    return currentState === GameState.GAME_OVER;
 };
 
 script.createEvent("OnStartEvent").bind(function () {

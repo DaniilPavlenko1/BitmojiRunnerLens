@@ -22,6 +22,16 @@ function respawnObstacle(obstacle) {
     transform.setLocalPosition(pos);
 }
 
+script.resetObstacles = function () {
+    for (var i = 0; i < script.obstacles.length; i++) {
+        if (script.obstacles[i]) {
+            respawnObstacle(script.obstacles[i]);
+        }
+    }
+
+    print("Obstacles reset");
+};
+
 script.createEvent("UpdateEvent").bind(function () {
     if (!script.gameController || !script.gameController.isRunning()) {
         return;

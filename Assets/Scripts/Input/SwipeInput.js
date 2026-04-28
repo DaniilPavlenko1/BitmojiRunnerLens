@@ -35,7 +35,9 @@ script.createEvent("TouchEndEvent").bind(function (eventData) {
     }
 
     if (!script.gameController.isRunning()) {
-        script.gameController.startGame();
+        if (script.gameController.isGameOver()) {
+            return;
+        }
         return;
     }
 
