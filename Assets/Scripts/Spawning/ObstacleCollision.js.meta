@@ -1,0 +1,57 @@
+- !<AssetImportMetadata/712f3728-f98f-47d0-9cbe-173b916a6ad5>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 5bbc048f-f5d0-4de2-9243-efeba97933c3
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 5bbc048f-f5d0-4de2-9243-efeba97933c3
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> bc34d2df-3265-4c97-8d93-9490f221b22f
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/bc34d2df-3265-4c97-8d93-9490f221b22f>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 40b99c25-17d1-4753-b7bb-628fd35d3fe9
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    gameController: false
+    hitDistanceX: false
+    hitDistanceZ: false
+    invulnerabilityTime: false
+    livesService: false
+    obstacles: false
+    playerRoot: false
+    playerZ: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - gameController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      livesService: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      playerRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      obstacles: !<reference.SceneObject[]>
+        []
+      playerZ: !<float> -300.000000
+      hitDistanceZ: !<float> 120.000000
+      hitDistanceX: !<float> 120.000000
+      invulnerabilityTime: !<float> 1.000000
+  ScriptTypes:
+    -
+      {}

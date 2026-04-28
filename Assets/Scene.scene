@@ -169,6 +169,21 @@
   FalloffType: None
   FalloffRange: .inf
   ShadowType: None
+- !<SceneObject/06ed3151-0ae2-459d-b674-dfc79c667d36>
+  PrefabRemaps:
+    []
+  Name: Obtacles
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 4ca81d42-415c-4005-8f7f-540d272d789d
+  Components:
+    []
 - !<SceneObject/0ca7fbdf-39b1-4a3e-84d8-04b5bd612b23>
   PrefabRemaps:
     []
@@ -198,7 +213,7 @@
   Children:
     []
   Components:
-    []
+    - !<own> 342123b6-491d-4511-bbbc-4b48ecd0e51f
 - !<SceneObject/23998360-1a99-43f9-950e-06e84fed9153>
   PrefabRemaps:
     []
@@ -230,6 +245,33 @@
   Components:
     - !<own> 4ba20141-33c9-40f8-9213-5519d19d1aca
     - !<own> 4f636fc2-20dc-44d2-83e6-b136a2af5f5c
+- !<ScriptComponent/2cb34cda-19e3-453f-b9b2-fffaa09ddca6>
+  PrefabRemaps:
+    []
+  Name: ObstacleCollision
+  Enabled: true
+  ScriptAsset: !<reference> 5bbc048f-f5d0-4de2-9243-efeba97933c3
+  ScriptInputsDefault:
+    playerZ: true
+    hitDistanceZ: true
+    hitDistanceX: true
+    invulnerabilityTime: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      gameController: !<reference.ScriptComponent> f4f88c7c-2688-41e9-9db2-8f1e96af7f03
+      livesService: !<reference.ScriptComponent> 342123b6-491d-4511-bbbc-4b48ecd0e51f
+      playerRoot: !<reference.SceneObject> 275a952d-f181-44fd-8ebf-aec4ebdc314a
+      obstacles: !<reference.SceneObject[]>
+        - !<reference> 4ca81d42-415c-4005-8f7f-540d272d789d
+      playerZ: !<float> -300.000000
+      hitDistanceZ: !<float> 120.000000
+      hitDistanceX: !<float> 120.000000
+      invulnerabilityTime: !<float> 1.000000
+  ScriptTypes:
+    "":
+      {}
 - !<ScriptComponent/2f52422f-d364-403a-8178-9f8b0749f472>
   PrefabRemaps:
     []
@@ -268,6 +310,22 @@
     []
   Components:
     []
+- !<ScriptComponent/342123b6-491d-4511-bbbc-4b48ecd0e51f>
+  PrefabRemaps:
+    []
+  Name: LivesService
+  Enabled: true
+  ScriptAsset: !<reference> a7bdedb2-8041-497b-8535-6d9e44870e54
+  ScriptInputsDefault:
+    maxLives: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      maxLives: 3
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/34ea7fdb-6899-497d-adcf-1cf16b005906>
   PrefabRemaps:
     []
@@ -283,6 +341,26 @@
     []
   Components:
     []
+- !<RenderMeshVisual/42cd9e08-5095-4014-a5d6-6f200414ed6e>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 559fd4e8-bb11-4c87-a5ee-6d2e4c6da6f7
+  Mesh: !<reference> d74a72b0-be9f-4154-b125-575f5b0d4fc9
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
 - !<ScriptComponent/4ba20141-33c9-40f8-9213-5519d19d1aca>
   PrefabRemaps:
     []
@@ -301,6 +379,21 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/4ca81d42-415c-4005-8f7f-540d272d789d>
+  PrefabRemaps:
+    []
+  Name: Obstacle_Box
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: -40.000000, z: -2500.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 120.000000, y: 120.000000, z: 120.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 42cd9e08-5095-4014-a5d6-6f200414ed6e
 - !<ScriptComponent/4f636fc2-20dc-44d2-83e6-b136a2af5f5c>
   PrefabRemaps:
     []
@@ -348,6 +441,7 @@
     HasSegmentScaleCompensation: false
   Children:
     - !<own> 865e3d4e-e222-41a8-8992-71532a3c0866
+    - !<own> 06ed3151-0ae2-459d-b674-dfc79c667d36
   Components:
     []
 - !<SceneObject/7712a10a-3b94-46c6-b6c0-5a12f8ec9f25>
@@ -534,6 +628,7 @@
     []
   Components:
     - !<own> 2f52422f-d364-403a-8178-9f8b0749f472
+    - !<own> 2cb34cda-19e3-453f-b9b2-fffaa09ddca6
 - !<SceneObject/c6c0a386-b19f-4c1b-ae7c-cfea6247f203>
   PrefabRemaps:
     []
