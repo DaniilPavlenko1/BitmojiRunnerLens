@@ -183,23 +183,7 @@
   Children:
     []
   Components:
-    - !<own> 14b6dff0-43ad-4fcf-8da4-2643a5eef90f
-- !<ScriptComponent/14b6dff0-43ad-4fcf-8da4-2643a5eef90f>
-  PrefabRemaps:
-    []
-  Name: DebugLaneInput
-  Enabled: true
-  ScriptAsset: !<reference> 22831fb9-3c71-493d-83ad-b85916b2f361
-  ScriptInputsDefault:
-    {}
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      playerMovement: !<reference.ScriptComponent> 4ba20141-33c9-40f8-9213-5519d19d1aca
-  ScriptTypes:
-    "":
-      {}
+    - !<own> 9f463048-b299-4b1e-a91a-f1b22b8b1d06
 - !<SceneObject/1f249394-450e-4f51-b1c4-a849a888f6f0>
   PrefabRemaps:
     []
@@ -428,6 +412,24 @@
   BlendNormals: false
   BlendShapes:
     {}
+- !<ScriptComponent/9f463048-b299-4b1e-a91a-f1b22b8b1d06>
+  PrefabRemaps:
+    []
+  Name: SwipeInput
+  Enabled: true
+  ScriptAsset: !<reference> 8769e9f6-31d0-4099-b986-52a77dc08d61
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      playerMovement: !<reference.ScriptComponent> 4ba20141-33c9-40f8-9213-5519d19d1aca
+      gameController: !<reference.ScriptComponent> f4f88c7c-2688-41e9-9db2-8f1e96af7f03
+      swipeThreshold: 0.050000
+  ScriptTypes:
+    "":
+      {}
 - !<ScriptComponent/a3baacd5-7a43-4072-ba45-f72145cd3c5c>
   PrefabRemaps:
     []

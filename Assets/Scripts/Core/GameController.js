@@ -43,13 +43,3 @@ script.isRunning = function () {
 script.createEvent("OnStartEvent").bind(function () {
     setState(GameState.READY);
 });
-
-script.createEvent("TapEvent").bind(function () {
-    if (currentState === GameState.READY) {
-        script.startGame();
-    } else if (currentState === GameState.RUNNING) {
-        script.gameOver();
-    } else {
-        script.resetGame();
-    }
-});
