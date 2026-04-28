@@ -1,0 +1,53 @@
+- !<AssetImportMetadata/9844a564-3b60-42f4-82eb-34a7a59b4f5e>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 5ea6965b-172d-4da2-a7c6-3ed556caaee8
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 5ea6965b-172d-4da2-a7c6-3ed556caaee8
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> 02a1cff0-c369-470e-8f76-4f2b8cc4acd9
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/02a1cff0-c369-470e-8f76-4f2b8cc4acd9>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 1794ad5f-149d-46d5-add2-3e08bd26e13e
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    despawnZ: false
+    gameController: false
+    laneDistance: false
+    moveSpeed: false
+    obstacles: false
+    respawnZ: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - gameController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      obstacles: !<reference.SceneObject[]>
+        []
+      moveSpeed: !<float> 700.000000
+      despawnZ: !<float> 1200.000000
+      respawnZ: !<float> -4800.000000
+      laneDistance: !<float> 150.000000
+  ScriptTypes:
+    -
+      {}
