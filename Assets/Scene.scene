@@ -20,8 +20,8 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.000000, z: 40.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Position: {x: 0.000000, y: 127.202164, z: 300.000000}
+    Rotation: {x: -6.000000, y: 0.000000, z: 0.000000}
     Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
   Children:
@@ -38,7 +38,7 @@
   RenderOrder: 0
   Size: 20.000000
   Near: 1.000000
-  Far: 1000.000000
+  Far: 10000.000000
   Fov: 63.541019
   ClearColor: !<CameraClearColor>
     Mode: None
@@ -199,6 +199,21 @@
     []
   Components:
     []
+- !<SceneObject/23998360-1a99-43f9-950e-06e84fed9153>
+  PrefabRemaps:
+    []
+  Name: Ground_3
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: -40.000000, z: -4800.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 600.000000, y: 100.000000, z: 2000.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 851bd843-2a76-48e2-9fb1-51d87774b9bd
 - !<SceneObject/275a952d-f181-44fd-8ebf-aec4ebdc314a>
   PrefabRemaps:
     []
@@ -211,7 +226,7 @@
     Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
   Children:
-    []
+    - !<own> 659d8459-95a7-455d-a73c-06c5527ae230
   Components:
     []
 - !<SceneObject/3105cc5b-3871-4409-a8bd-21f88d0eb0f6>
@@ -244,6 +259,21 @@
     []
   Components:
     []
+- !<SceneObject/659d8459-95a7-455d-a73c-06c5527ae230>
+  PrefabRemaps:
+    []
+  Name: Bitmoji 3D
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: -40.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 180.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> a3baacd5-7a43-4072-ba45-f72145cd3c5c
 - !<SceneObject/709b93d1-c6c0-4ecb-9e69-88222966965c>
   PrefabRemaps:
     []
@@ -256,7 +286,59 @@
     Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
   Children:
+    - !<own> 865e3d4e-e222-41a8-8992-71532a3c0866
+  Components:
     []
+- !<SceneObject/7712a10a-3b94-46c6-b6c0-5a12f8ec9f25>
+  PrefabRemaps:
+    []
+  Name: Ground_2
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: -40.000000, z: -2800.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 600.000000, y: 100.000000, z: 2000.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> f0414145-73f9-40b2-a283-4ec120a94d5f
+- !<RenderMeshVisual/851bd843-2a76-48e2-9fb1-51d87774b9bd>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 1d0ceb9b-14de-4219-be24-14e76cb2b7bb
+  Mesh: !<reference> 9d0884cf-03d6-4d10-94e2-9866252b221c
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/865e3d4e-e222-41a8-8992-71532a3c0866>
+  PrefabRemaps:
+    []
+  Name: Ground
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> f59aab61-bea8-4aa0-b82f-dfb03e164ee9
+    - !<own> 7712a10a-3b94-46c6-b6c0-5a12f8ec9f25
+    - !<own> 23998360-1a99-43f9-950e-06e84fed9153
   Components:
     []
 - !<SceneObject/8e87010c-e87a-48eb-95d2-092cef485ac7>
@@ -273,7 +355,7 @@
   Children:
     []
   Components:
-    []
+    - !<own> f4f88c7c-2688-41e9-9db2-8f1e96af7f03
 - !<SceneObject/94994e98-b2fa-4489-8c66-9009316722f4>
   PrefabRemaps:
     []
@@ -292,6 +374,71 @@
     - !<own> 34ea7fdb-6899-497d-adcf-1cf16b005906
   Components:
     []
+- !<RenderMeshVisual/99433e1e-3006-4a3b-9abd-12148477fb7b>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 1d0ceb9b-14de-4219-be24-14e76cb2b7bb
+  Mesh: !<reference> 9d0884cf-03d6-4d10-94e2-9866252b221c
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<ScriptComponent/a3baacd5-7a43-4072-ba45-f72145cd3c5c>
+  PrefabRemaps:
+    []
+  Name: Bitmoji 3D
+  Enabled: true
+  ScriptAsset: !<reference> 7a3c78c1-4ff4-41a1-9f38-a2b9e6360f03
+  ScriptInputsDefault:
+    bitmojiType: true
+    friendsComponent: true
+    friendIndex: true
+    privacyType: true
+    autoDownload: true
+    renderOrder: true
+    castShadow: true
+    meshQuality: true
+    textureQuality: true
+    autoMention: true
+    printDebug: true
+    printWarnings: true
+    printErrors: true
+    materialHolder: true
+    loaderPrefab: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      bitmojiType: !<float> 0.000000
+      friendsComponent: !<reference.Component> 00000000-0000-0000-0000-000000000000
+      friendIndex: 0
+      privacyType: 1
+      autoDownload: true
+      mixamoAnimation: false
+      renderOrder: 0
+      castShadow: true
+      meshQuality: 0.500000
+      textureQuality: 0.500000
+      autoMention: true
+      printDebug: false
+      printWarnings: true
+      printErrors: true
+      materialHolder: !<reference.Material> 40b3147b-e211-4919-9ba0-bedd05c60132
+      loaderPrefab: !<reference.ObjectPrefab> 3642f110-de5e-4fcd-9cf9-bdd9164d8108
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/b7079127-8f43-4b51-bab8-ee6b841a6331>
   PrefabRemaps:
     []
@@ -342,3 +489,54 @@
     - !<own> c6c0a386-b19f-4c1b-ae7c-cfea6247f203
   Components:
     []
+- !<RenderMeshVisual/f0414145-73f9-40b2-a283-4ec120a94d5f>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 1d0ceb9b-14de-4219-be24-14e76cb2b7bb
+  Mesh: !<reference> 9d0884cf-03d6-4d10-94e2-9866252b221c
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<ScriptComponent/f4f88c7c-2688-41e9-9db2-8f1e96af7f03>
+  PrefabRemaps:
+    []
+  Name: GameController
+  Enabled: true
+  ScriptAsset: !<reference> 079bdea1-e3b3-4c38-8072-17110768f3a5
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/f59aab61-bea8-4aa0-b82f-dfb03e164ee9>
+  PrefabRemaps:
+    []
+  Name: Ground_1
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: -40.000000, z: -800.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 600.000000, y: 100.000000, z: 2000.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 99433e1e-3006-4a3b-9abd-12148477fb7b
