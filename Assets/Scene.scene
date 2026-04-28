@@ -270,6 +270,22 @@
   ScriptTypes:
     "":
       {}
+- !<ScriptComponent/2ded7d10-1f34-4f66-b718-19ebb6cfcd92>
+  PrefabRemaps:
+    []
+  Name: ScoreService
+  Enabled: true
+  ScriptAsset: !<reference> 9026a517-02ad-4289-bb9e-ec3457fb8727
+  ScriptInputsDefault:
+    scorePerCollectible: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      scorePerCollectible: 10
+  ScriptTypes:
+    "":
+      {}
 - !<ScriptComponent/2f52422f-d364-403a-8178-9f8b0749f472>
   PrefabRemaps:
     []
@@ -307,7 +323,7 @@
   Children:
     []
   Components:
-    []
+    - !<own> 2ded7d10-1f34-4f66-b718-19ebb6cfcd92
 - !<ScriptComponent/342123b6-491d-4511-bbbc-4b48ecd0e51f>
   PrefabRemaps:
     []
@@ -439,6 +455,7 @@
   Children:
     - !<own> 865e3d4e-e222-41a8-8992-71532a3c0866
     - !<own> 06ed3151-0ae2-459d-b674-dfc79c667d36
+    - !<own> c080aed6-86f6-4968-a680-e1a3ba075a60
   Components:
     []
 - !<SceneObject/7712a10a-3b94-46c6-b6c0-5a12f8ec9f25>
@@ -456,6 +473,49 @@
     []
   Components:
     - !<own> f0414145-73f9-40b2-a283-4ec120a94d5f
+- !<SceneObject/7f413334-6845-4030-bb5b-5b5729c3735f>
+  PrefabRemaps:
+    []
+  Name: Collectible_Coin
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: -20.000000, z: -3500.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 60.000000, y: 60.000000, z: 60.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> f659cb49-541d-46dd-bbb2-cdca9a689524
+- !<ScriptComponent/821826d3-368d-46d0-8255-e8d3d6acec38>
+  PrefabRemaps:
+    []
+  Name: CollectibleMover
+  Enabled: true
+  ScriptAsset: !<reference> d3090573-bdc5-4542-921b-6cd5b8d1635e
+  ScriptInputsDefault:
+    moveSpeed: true
+    despawnZ: true
+    respawnZ: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      gameController: !<reference.ScriptComponent> f4f88c7c-2688-41e9-9db2-8f1e96af7f03
+      scoreService: !<reference.ScriptComponent> 2ded7d10-1f34-4f66-b718-19ebb6cfcd92
+      playerRoot: !<reference.SceneObject> 275a952d-f181-44fd-8ebf-aec4ebdc314a
+      collectibles: !<reference.SceneObject[]>
+        - !<reference> 7f413334-6845-4030-bb5b-5b5729c3735f
+      moveSpeed: !<float> 700.000000
+      despawnZ: !<float> 1200.000000
+      respawnZ: !<float> -4800.000000
+      laneDistance: !<float> 100.000000
+      collectDistanceZ: !<float> 60.000000
+      collectDistanceX: !<float> 60.000000
+  ScriptTypes:
+    "":
+      {}
 - !<RenderMeshVisual/851bd843-2a76-48e2-9fb1-51d87774b9bd>
   PrefabRemaps:
     []
@@ -627,6 +687,7 @@
     - !<own> 2f52422f-d364-403a-8178-9f8b0749f472
     - !<own> 2cb34cda-19e3-453f-b9b2-fffaa09ddca6
     - !<own> bc5d3801-8086-440e-8a62-4cb199c97450
+    - !<own> 821826d3-368d-46d0-8255-e8d3d6acec38
 - !<ScriptComponent/bc5d3801-8086-440e-8a62-4cb199c97450>
   PrefabRemaps:
     []
@@ -651,6 +712,21 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/c080aed6-86f6-4968-a680-e1a3ba075a60>
+  PrefabRemaps:
+    []
+  Name: Collectibles
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 7f413334-6845-4030-bb5b-5b5729c3735f
+  Components:
+    []
 - !<SceneObject/c6c0a386-b19f-4c1b-ae7c-cfea6247f203>
   PrefabRemaps:
     []
@@ -737,3 +813,23 @@
     []
   Components:
     - !<own> 99433e1e-3006-4a3b-9abd-12148477fb7b
+- !<RenderMeshVisual/f659cb49-541d-46dd-bbb2-cdca9a689524>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> cd942f85-e3d8-4b8c-9939-ae935b103bf2
+  Mesh: !<reference> a5852a4a-60d7-4ec3-aac3-f86ea8da4d72
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
