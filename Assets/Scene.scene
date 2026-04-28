@@ -3,6 +3,7 @@
   objects:
     - !<own> 00000000-0000-0065-0000-000000000064
     - !<own> 0005641c-028d-459a-0000-000000014b4d
+    - !<own> 94994e98-b2fa-4489-8c66-9009316722f4
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
       []
@@ -168,3 +169,176 @@
   FalloffType: None
   FalloffRange: .inf
   ShadowType: None
+- !<SceneObject/0ca7fbdf-39b1-4a3e-84d8-04b5bd612b23>
+  PrefabRemaps:
+    []
+  Name: InputService
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/1f249394-450e-4f51-b1c4-a849a888f6f0>
+  PrefabRemaps:
+    []
+  Name: LivesService
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/275a952d-f181-44fd-8ebf-aec4ebdc314a>
+  PrefabRemaps:
+    []
+  Name: PlayerRoot
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/3105cc5b-3871-4409-a8bd-21f88d0eb0f6>
+  PrefabRemaps:
+    []
+  Name: ScoreService
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/34ea7fdb-6899-497d-adcf-1cf16b005906>
+  PrefabRemaps:
+    []
+  Name: UI
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/709b93d1-c6c0-4ecb-9e69-88222966965c>
+  PrefabRemaps:
+    []
+  Name: WorldRoot
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/8e87010c-e87a-48eb-95d2-092cef485ac7>
+  PrefabRemaps:
+    []
+  Name: GameController
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/94994e98-b2fa-4489-8c66-9009316722f4>
+  PrefabRemaps:
+    []
+  Name: GameRoot
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 275a952d-f181-44fd-8ebf-aec4ebdc314a
+    - !<own> 709b93d1-c6c0-4ecb-9e69-88222966965c
+    - !<own> d3fbbd4c-e87f-4862-a7c9-04fe76778220
+    - !<own> 34ea7fdb-6899-497d-adcf-1cf16b005906
+  Components:
+    []
+- !<SceneObject/b7079127-8f43-4b51-bab8-ee6b841a6331>
+  PrefabRemaps:
+    []
+  Name: SpawnController
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/c6c0a386-b19f-4c1b-ae7c-cfea6247f203>
+  PrefabRemaps:
+    []
+  Name: DifficultyService
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/d3fbbd4c-e87f-4862-a7c9-04fe76778220>
+  PrefabRemaps:
+    []
+  Name: Managers
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 8e87010c-e87a-48eb-95d2-092cef485ac7
+    - !<own> 0ca7fbdf-39b1-4a3e-84d8-04b5bd612b23
+    - !<own> b7079127-8f43-4b51-bab8-ee6b841a6331
+    - !<own> 3105cc5b-3871-4409-a8bd-21f88d0eb0f6
+    - !<own> 1f249394-450e-4f51-b1c4-a849a888f6f0
+    - !<own> c6c0a386-b19f-4c1b-ae7c-cfea6247f203
+  Components:
+    []
