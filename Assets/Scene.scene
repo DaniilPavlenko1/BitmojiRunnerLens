@@ -20,8 +20,8 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 127.202164, z: 300.000000}
-    Rotation: {x: -6.000000, y: 0.000000, z: 0.000000}
+    Position: {x: 0.000000, y: 127.202164, z: 350.000000}
+    Rotation: {x: -8.000000, y: 0.000000, z: 0.000000}
     Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
   Children:
@@ -183,7 +183,23 @@
   Children:
     []
   Components:
+    - !<own> 14b6dff0-43ad-4fcf-8da4-2643a5eef90f
+- !<ScriptComponent/14b6dff0-43ad-4fcf-8da4-2643a5eef90f>
+  PrefabRemaps:
     []
+  Name: DebugLaneInput
+  Enabled: true
+  ScriptAsset: !<reference> 22831fb9-3c71-493d-83ad-b85916b2f361
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      playerMovement: !<reference.ScriptComponent> 4ba20141-33c9-40f8-9213-5519d19d1aca
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/1f249394-450e-4f51-b1c4-a849a888f6f0>
   PrefabRemaps:
     []
@@ -228,7 +244,7 @@
   Children:
     - !<own> 659d8459-95a7-455d-a73c-06c5527ae230
   Components:
-    []
+    - !<own> 4ba20141-33c9-40f8-9213-5519d19d1aca
 - !<SceneObject/3105cc5b-3871-4409-a8bd-21f88d0eb0f6>
   PrefabRemaps:
     []
@@ -259,6 +275,24 @@
     []
   Components:
     []
+- !<ScriptComponent/4ba20141-33c9-40f8-9213-5519d19d1aca>
+  PrefabRemaps:
+    []
+  Name: PlayerLaneMovement
+  Enabled: true
+  ScriptAsset: !<reference> 5c9e618f-842b-4735-ba69-1a0753a4d6f9
+  ScriptInputsDefault:
+    moveSpeed: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      playerRoot: !<reference.SceneObject> 275a952d-f181-44fd-8ebf-aec4ebdc314a
+      laneDistance: !<float> 100.000000
+      moveSpeed: !<float> 8.000000
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/659d8459-95a7-455d-a73c-06c5527ae230>
   PrefabRemaps:
     []
