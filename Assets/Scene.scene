@@ -230,6 +230,29 @@
   Components:
     - !<own> 4ba20141-33c9-40f8-9213-5519d19d1aca
     - !<own> 4f636fc2-20dc-44d2-83e6-b136a2af5f5c
+- !<ScriptComponent/2f52422f-d364-403a-8178-9f8b0749f472>
+  PrefabRemaps:
+    []
+  Name: MovingWorld
+  Enabled: true
+  ScriptAsset: !<reference> 83f96470-6780-46d6-a4f2-2fffae9da5c8
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      gameController: !<reference.ScriptComponent> f4f88c7c-2688-41e9-9db2-8f1e96af7f03
+      movingObjects: !<reference.SceneObject[]>
+        - !<reference> f59aab61-bea8-4aa0-b82f-dfb03e164ee9
+        - !<reference> 7712a10a-3b94-46c6-b6c0-5a12f8ec9f25
+        - !<reference> 23998360-1a99-43f9-950e-06e84fed9153
+      moveSpeed: !<float> 700.000000
+      resetZ: !<float> 1200.000000
+      segmentLength: !<float> 2000.000000
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/3105cc5b-3871-4409-a8bd-21f88d0eb0f6>
   PrefabRemaps:
     []
@@ -510,7 +533,7 @@
   Children:
     []
   Components:
-    []
+    - !<own> 2f52422f-d364-403a-8178-9f8b0749f472
 - !<SceneObject/c6c0a386-b19f-4c1b-ae7c-cfea6247f203>
   PrefabRemaps:
     []

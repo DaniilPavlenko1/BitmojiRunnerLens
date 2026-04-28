@@ -1,0 +1,51 @@
+- !<AssetImportMetadata/f7df2b24-e003-46b3-9cb5-24c83e5c371f>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 83f96470-6780-46d6-a4f2-2fffae9da5c8
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 83f96470-6780-46d6-a4f2-2fffae9da5c8
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> c4cff439-6d4a-4d33-9ae4-812b4bc73b5f
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/c4cff439-6d4a-4d33-9ae4-812b4bc73b5f>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: cebda88b-dcaf-4c38-91ef-5b5e29538296
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    gameController: false
+    moveSpeed: false
+    movingObjects: false
+    resetZ: false
+    segmentLength: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - gameController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      movingObjects: !<reference.SceneObject[]>
+        []
+      moveSpeed: !<float> 250.000000
+      resetZ: !<float> -700.000000
+      segmentLength: !<float> 600.000000
+  ScriptTypes:
+    -
+      {}
