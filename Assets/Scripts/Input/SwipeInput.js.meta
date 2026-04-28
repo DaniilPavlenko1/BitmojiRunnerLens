@@ -27,6 +27,7 @@
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
     gameController: false
+    playerJump: false
     playerMovement: false
     swipeThreshold: false
   ScriptTypesHidden:
@@ -40,6 +41,7 @@
   DefaultScriptInputs:
     - playerMovement: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       gameController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      playerJump: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       swipeThreshold: !<float> 40.000000
   ScriptTypes:
     -

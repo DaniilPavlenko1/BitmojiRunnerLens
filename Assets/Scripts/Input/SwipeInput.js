@@ -2,6 +2,7 @@
 
 //@input Component.ScriptComponent playerMovement
 //@input Component.ScriptComponent gameController
+//@input Component.ScriptComponent playerJump
 
 //@input float swipeThreshold = 40.0
 
@@ -44,5 +45,14 @@ script.createEvent("TouchEndEvent").bind(function (eventData) {
         } else if (dx < -script.swipeThreshold) {
             script.playerMovement.moveLeft();
         }
+    }else {
+        // vertical swipe
+        if (dy < -script.swipeThreshold) {
+            print("Swipe up detected");
+
+            if (script.playerJump) {
+                script.playerJump.jump();
+            }
     }
+}
 });
