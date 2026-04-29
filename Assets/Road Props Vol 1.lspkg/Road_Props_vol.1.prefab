@@ -1,0 +1,1655 @@
+- !<ObjectPrefab/5cb0a39d-5033-4bdb-a5d3-36dea2c69d8a>
+  PackagePath: ""
+  objects:
+    - !<own> 87762d2d-d2aa-46f7-b06f-cadbb8aab829
+  LazyLoading: false
+  RetainAssets: true
+  PreviewEnvironment: !<reference> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/08f4fda3-4759-41f2-82fc-4b6db6b6dd7b>
+  PrefabRemaps:
+    []
+  Name: road_mailbox_red_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -85.000000, y: 0.000000, z: 110.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 44ccfb7a-cefb-4427-9254-f87e612cad5b
+- !<SceneObject/0afc1925-0c34-4a7b-80cf-a5a3c6093282>
+  PrefabRemaps:
+    []
+  Name: road_street_electric_pole_condensers_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -150.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 74a4c571-2418-4e53-8adf-3c994c4d1aa1
+- !<RenderMeshVisual/10e973e0-f92d-4b4d-ac73-260b041a1716>
+  PrefabRemaps:
+    []
+  Name: component_9
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 80737f16-4dcd-42e4-aae9-97175bc86fd0
+  Mesh: !<reference> 9e972239-a5bc-4ab6-b21c-d29da1cc6df8
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/1b35417e-165e-42e4-898d-8933fbda71ba>
+  PrefabRemaps:
+    []
+  Name: component_17
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 1a88a296-fbe0-47eb-ae48-16fda62a25cc
+  Mesh: !<reference> 981351be-6dde-4834-8893-7dbe6eb371e8
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/1e617cb8-334a-4a8c-bfc0-32aa8126c59e>
+  PrefabRemaps:
+    []
+  Name: road_street_light_solo_bitmoji_copy
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 220.000000, y: 0.000000, z: -100.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 688712ca-13ae-4b54-bc8f-761eb188d480
+- !<SceneObject/1f5a552f-ca1a-410f-9f33-bb6d3bd701f0>
+  PrefabRemaps:
+    []
+  Name: road_trash_can_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -345.000000, y: -0.000000, z: 200.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 81c46caf-fee8-4e83-abbc-5481f88ebc18
+- !<SceneObject/23b3b1c2-63b6-42db-be07-827096220812>
+  PrefabRemaps:
+    []
+  Name: road_ticket_machine_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 110.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 67a03257-4a55-4a36-8814-9b85899688d4
+- !<SceneObject/260dd9e6-e09e-423f-acfa-12ab201f265e>
+  PrefabRemaps:
+    []
+  Name: road_barrier_stop_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -285.000000, y: 0.000000, z: 200.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> e5b9f6c8-9728-4e04-8757-b60814eaa762
+- !<RenderMeshVisual/2743dff4-7f14-4f92-89a1-b1ef0fc39731>
+  PrefabRemaps:
+    []
+  Name: component_20
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> ca2ac6d0-8ac0-4a96-8158-a5de70f173a5
+  Mesh: !<reference> 72d925d8-3878-4a09-a302-6a62f25e9db7
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/2dedc3e8-52b2-4fb1-9a92-655455000b22>
+  PrefabRemaps:
+    []
+  Name: component_26
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 5ea2e78d-69f3-4687-a3b4-01f1088c02b9
+  Mesh: !<reference> 6df623fe-08c8-4cea-8b56-30ecc1312747
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/327d2eca-3283-4f47-92ad-9810fba1af2b>
+  PrefabRemaps:
+    []
+  Name: road_speed_bump_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -250.000000, y: 0.000000, z: 200.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> f4ff5d1b-cef3-4f26-894a-136c273fb3cf
+- !<RenderMeshVisual/38aa3788-795d-445b-971d-3816e5851622>
+  PrefabRemaps:
+    []
+  Name: component_21
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 12ac0331-88de-4515-9d8e-2dfec3c3b29c
+  Mesh: !<reference> a6740d0e-e5eb-477f-bcb1-5f3475993bc0
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/3f6be9da-d9fc-4fb1-89d2-6211d51b7063>
+  PrefabRemaps:
+    []
+  Name: road_bollard_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 625.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 572dbffc-2c8c-4b2e-aaff-1ba53834cf26
+- !<RenderMeshVisual/43595044-74ac-4d79-bc75-262c8ced5239>
+  PrefabRemaps:
+    []
+  Name: component_35
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 5b6a997a-a3c9-407e-aff0-1ad8edba8b73
+  Mesh: !<reference> e8127ae5-16c1-4be6-8740-e6fca0f1a51c
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/44ccfb7a-cefb-4427-9254-f87e612cad5b>
+  PrefabRemaps:
+    []
+  Name: component_22
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> b6f9a6bb-e6b3-410e-9849-fdb5e50287fa
+  Mesh: !<reference> fe6c8155-bbb5-486d-9b9f-30ae484548b7
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/4abb1eb5-b816-47fe-8bf4-48b77b8aa3e5>
+  PrefabRemaps:
+    []
+  Name: component_27
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 152fb00f-9d00-41dc-ae89-4bf62be76290
+  Mesh: !<reference> 3853c7b2-51dd-4b2c-b0b3-1bb9a31b7fb9
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/4b28c074-0048-498c-aa81-48e701091d9a>
+  PrefabRemaps:
+    []
+  Name: road_fire_hydrant_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 160.000000, y: 0.000000, z: 200.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 1b35417e-165e-42e4-898d-8933fbda71ba
+- !<SceneObject/4dd1a7d8-91fb-4470-9b26-1fc7ff1e9401>
+  PrefabRemaps:
+    []
+  Name: road_flower_pot_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 205.000000, y: 0.000000, z: 200.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 9367cb8e-f011-4ed3-870d-8104fd036f9f
+- !<RenderMeshVisual/4de92015-4bbd-421d-b372-d16230375457>
+  PrefabRemaps:
+    []
+  Name: component_28
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> ef25450a-2e12-4a25-9bbc-27a1039dc57e
+  Mesh: !<reference> 155a8570-0540-4051-a758-d3f88a6e2a83
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/5663d116-8690-417a-915e-691d82d3cb78>
+  PrefabRemaps:
+    []
+  Name: road_road_marker_post_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 65.000000, y: 0.000000, z: 200.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> b1effe64-fad1-4cba-a267-4bb46ab24f07
+- !<RenderMeshVisual/572dbffc-2c8c-4b2e-aaff-1ba53834cf26>
+  PrefabRemaps:
+    []
+  Name: component_1
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> da1e0269-ca7a-438f-85f9-2cbacee7f770
+  Mesh: !<reference> 437c0af6-99a2-4b74-b9ca-d611870fe476
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/589cf637-6c28-4082-81e0-cb1b6b1cfca6>
+  PrefabRemaps:
+    []
+  Name: road_sign_street1_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 350.000000, y: -0.000001, z: 110.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> f449b1e7-d4a7-4951-b7b2-78cd78c68a34
+- !<SceneObject/630ebdc5-3cd6-4faa-9cf5-7902e32dc802>
+  PrefabRemaps:
+    []
+  Name: road_street_light_duo_bitmoji_copy
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 150.000015, y: 0.000000, z: -100.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 6a7dd173-9cb0-4a33-97bc-2a0ddbbf9c44
+- !<RenderMeshVisual/63a50c02-48e3-4c2c-9e4f-cc87991ac4b9>
+  PrefabRemaps:
+    []
+  Name: component_27
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 23cf7985-f949-46ea-bbf2-e97b1f6e39f7
+  Mesh: !<reference> 3853c7b2-51dd-4b2c-b0b3-1bb9a31b7fb9
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/67a03257-4a55-4a36-8814-9b85899688d4>
+  PrefabRemaps:
+    []
+  Name: component_33
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> bf50f45e-1238-43a1-9991-ad353c50afbd
+  Mesh: !<reference> 34133a53-2f4a-4217-8817-eb33d1b81185
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/67dbd8d5-dcac-489d-8b98-3916417a676a>
+  PrefabRemaps:
+    []
+  Name: component_11
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 509b80d4-ad8e-42b0-b45b-c527edd9c0c3
+  Mesh: !<reference> 530cca1d-48da-40bc-bee6-2d514e61efaa
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/688712ca-13ae-4b54-bc8f-761eb188d480>
+  PrefabRemaps:
+    []
+  Name: component_10
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> cedb2a71-3f4e-4e19-8e15-2cdcbcb4dee7
+  Mesh: !<reference> aef5d9c6-a92f-4473-a298-4c8f8b6fba3b
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/6a21ddaf-5c27-4a72-ba6a-eba170e89597>
+  PrefabRemaps:
+    []
+  Name: component_35
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> a36863d5-c716-4dd2-a179-5e11221e3ada
+  Mesh: !<reference> e8127ae5-16c1-4be6-8740-e6fca0f1a51c
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/6a7dd173-9cb0-4a33-97bc-2a0ddbbf9c44>
+  PrefabRemaps:
+    []
+  Name: component_9
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> cedb2a71-3f4e-4e19-8e15-2cdcbcb4dee7
+  Mesh: !<reference> 9e972239-a5bc-4ab6-b21c-d29da1cc6df8
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/6ed781ff-e3cf-4f03-b468-3327a5881b1b>
+  PrefabRemaps:
+    []
+  Name: road_fence_metal_bitmoji1
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -500.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> f9375617-9141-426b-b9c4-175790ce8949
+- !<SceneObject/716d7641-2f35-40a1-8d24-129c0e95d064>
+  PrefabRemaps:
+    []
+  Name: road_sign_street2_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 260.000000, y: -0.000001, z: 110.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 8b9c52cb-c0ed-4d2f-9372-1fe1f49a37d0
+- !<RenderMeshVisual/74a4c571-2418-4e53-8adf-3c994c4d1aa1>
+  PrefabRemaps:
+    []
+  Name: component_5
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> f44e8c2c-67cf-41e7-bef0-adf0ec8e4cb8
+  Mesh: !<reference> 93b63d93-ddd1-4ab3-aef6-3e238a693fa1
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/771ad8ea-48e3-4b95-a84d-f128c5a610fd>
+  PrefabRemaps:
+    []
+  Name: road_traffic_light_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -235.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> e5eaa5c6-cf64-432d-a6b2-899d9400ea1c
+- !<SceneObject/78962aba-62fe-417b-940d-b0728b549990>
+  PrefabRemaps:
+    []
+  Name: road_street_electric_pole_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -320.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 9248615d-4866-4e49-8c85-6739b3ac470f
+- !<SceneObject/7abf55f4-45b0-4d78-92dd-fbc8695eb1ef>
+  PrefabRemaps:
+    []
+  Name: road_bike_sign_stand_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -50.000000, y: 0.000000, z: 200.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 9c23e976-70db-4d35-a4af-02164ecea183
+- !<SceneObject/7b348bc1-bdcb-4db2-90d2-125d3f840d15>
+  PrefabRemaps:
+    []
+  Name: road_parking_meter_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 200.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> bd8c7980-3881-4441-9225-737bdf2cc2bf
+- !<RenderMeshVisual/80775a89-9ab6-465c-97a6-5eabd65f664f>
+  PrefabRemaps:
+    []
+  Name: component_13
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 685ddc78-e349-4151-8fcd-34f0bb11e29f
+  Mesh: !<reference> af70b728-1cb4-4504-af81-20bdc4df18c2
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/80f85601-e6fc-4a35-9112-93a577cccab5>
+  PrefabRemaps:
+    []
+  Name: component_25
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> bcf14bf7-98df-4140-ae0e-a416cf715a81
+  Mesh: !<reference> dbae9316-359e-4f62-9db3-e972cb17e8cc
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/81c46caf-fee8-4e83-abbc-5481f88ebc18>
+  PrefabRemaps:
+    []
+  Name: component_35
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 5040f097-40dd-4abb-a7c8-e85cc5a01b4f
+  Mesh: !<reference> e8127ae5-16c1-4be6-8740-e6fca0f1a51c
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/82024f05-9528-4103-abcc-2514216c700f>
+  PrefabRemaps:
+    []
+  Name: road_trash_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 190.000000, y: -0.000000, z: 110.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> a77a44f1-8514-4a5c-99a7-470763001f4e
+- !<SceneObject/827a7d3d-70ee-444c-8b14-a3e63a0e709e>
+  PrefabRemaps:
+    []
+  Name: road_sign_speed_limit_35_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 630.000000, y: -0.000001, z: 110.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 99181040-bfdf-42ad-8ec5-e4bea8fd714f
+- !<SceneObject/848c2df4-ddc4-4a26-b20e-9ff8ed11df45>
+  PrefabRemaps:
+    []
+  Name: road_sign_speed_limit_35_bitmoji_copy_2
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 766.117554, y: 0.000000, z: 110.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 63a50c02-48e3-4c2c-9e4f-cc87991ac4b9
+- !<SceneObject/87762d2d-d2aa-46f7-b06f-cadbb8aab829>
+  PrefabRemaps:
+    - 08f4fda3-4759-41f2-82fc-4b6db6b6dd7b: 08f4fda3-4759-41f2-7d03-b49249492284
+    - 0afc1925-0c34-4a7b-80cf-a5a3c6093282: 0afc1925-0c34-4a7b-7f30-5a5c39f6cd7d
+    - 10e973e0-f92d-4b4d-ac73-260b041a1716: 10e973e0-f92d-4b4d-538c-d9f4fbe5e8e9
+    - 1b35417e-165e-42e4-898d-8933fbda71ba: 1b35417e-165e-42e4-7672-76cc04258e45
+    - 1e617cb8-334a-4a8c-bfc0-32aa8126c59e: 1e617cb8-334a-4a8c-403f-cd557ed93a61
+    - 1f5a552f-ca1a-410f-9f33-bb6d3bd701f0: 1f5a552f-ca1a-410f-60cc-4492c428fe0f
+    - 23b3b1c2-63b6-42db-be07-827096220812: 23b3b1c2-63b6-42db-41f8-7d8f69ddf7ed
+    - 260dd9e6-e09e-423f-acfa-12ab201f265e: 260dd9e6-e09e-423f-5305-ed54dfe0d9a1
+    - 2743dff4-7f14-4f92-89a1-b1ef0fc39731: 2743dff4-7f14-4f92-765e-4e10f03c68ce
+    - 2dedc3e8-52b2-4fb1-9a92-655455000b22: 2dedc3e8-52b2-4fb1-656d-9aabaafff4dd
+    - 327d2eca-3283-4f47-92ad-9810fba1af2b: 327d2eca-3283-4f47-6d52-67ef045e50d4
+    - 38aa3788-795d-445b-971d-3816e5851622: 38aa3788-795d-445b-68e2-c7e91a7ae9dd
+    - 3f6be9da-d9fc-4fb1-89d2-6211d51b7063: 3f6be9da-d9fc-4fb1-762d-9dee2ae48f9c
+    - 43595044-74ac-4d79-bc75-262c8ced5239: 43595044-74ac-4d79-438a-d9d37312adc6
+    - 44ccfb7a-cefb-4427-9254-f87e612cad5b: 44ccfb7a-cefb-4427-6dab-07819ed352a4
+    - 4abb1eb5-b816-47fe-8bf4-48b77b8aa3e5: 4abb1eb5-b816-47fe-740b-b74884755c1a
+    - 4b28c074-0048-498c-aa81-48e701091d9a: 4b28c074-0048-498c-557e-b718fef6e265
+    - 4dd1a7d8-91fb-4470-9b26-1fc7ff1e9401: 4dd1a7d8-91fb-4470-64d9-e03800e16bfe
+    - 4de92015-4bbd-421d-b372-d16230375457: 4de92015-4bbd-421d-4c8d-2e9dcfc8aba8
+    - 5663d116-8690-417a-915e-691d82d3cb78: 5663d116-8690-417a-6ea1-96e27d2c3487
+    - 572dbffc-2c8c-4b2e-aaff-1ba53834cf26: 572dbffc-2c8c-4b2e-5500-e45ac7cb30d9
+    - 589cf637-6c28-4082-81e0-cb1b6b1cfca6: 589cf637-6c28-4082-7e1f-34e494e30359
+    - 630ebdc5-3cd6-4faa-9cf5-7902e32dc802: 630ebdc5-3cd6-4faa-630a-86fd1cd237fd
+    - 63a50c02-48e3-4c2c-9e4f-cc87991ac4b9: 63a50c02-48e3-4c2c-61b0-337866e53b46
+    - 67a03257-4a55-4a36-8814-9b85899688d4: 67a03257-4a55-4a36-77eb-647a7669772b
+    - 67dbd8d5-dcac-489d-8b98-3916417a676a: 67dbd8d5-dcac-489d-7467-c6e9be859895
+    - 688712ca-13ae-4b54-bc8f-761eb188d480: 688712ca-13ae-4b54-4370-89e14e772b7f
+    - 6a21ddaf-5c27-4a72-ba6a-eba170e89597: 6a21ddaf-5c27-4a72-4595-145e8f176a68
+    - 6a7dd173-9cb0-4a33-97bc-2a0ddbbf9c44: 6a7dd173-9cb0-4a33-6843-d5f2244063bb
+    - 6ed781ff-e3cf-4f03-b468-3327a5881b1b: 6ed781ff-e3cf-4f03-4b97-ccd85a77e4e4
+    - 716d7641-2f35-40a1-8d24-129c0e95d064: 716d7641-2f35-40a1-72db-ed63f16a2f9b
+    - 74a4c571-2418-4e53-8adf-3c994c4d1aa1: 74a4c571-2418-4e53-7520-c366b3b2e55e
+    - 771ad8ea-48e3-4b95-a84d-f128c5a610fd: 771ad8ea-48e3-4b95-57b2-0ed73a59ef02
+    - 78962aba-62fe-417b-940d-b0728b549990: 78962aba-62fe-417b-6bf2-4f8d74ab666f
+    - 7abf55f4-45b0-4d78-92dd-fbc8695eb1ef: 7abf55f4-45b0-4d78-6d22-043796a14e10
+    - 7b348bc1-bdcb-4db2-90d2-125d3f840d15: 7b348bc1-bdcb-4db2-6f2d-eda2c07bf2ea
+    - 80775a89-9ab6-465c-97a6-5eabd65f664f: 80775a89-9ab6-465c-6859-a15429a099b0
+    - 80f85601-e6fc-4a35-9112-93a577cccab5: 80f85601-e6fc-4a35-6eed-6c5a8833354a
+    - 81c46caf-fee8-4e83-abbc-5481f88ebc18: 81c46caf-fee8-4e83-5443-ab7e077143e7
+    - 82024f05-9528-4103-abcc-2514216c700f: 82024f05-9528-4103-5433-daebde938ff0
+    - 827a7d3d-70ee-444c-8b14-a3e63a0e709e: 827a7d3d-70ee-444c-74eb-5c19c5f18f61
+    - 848c2df4-ddc4-4a26-b20e-9ff8ed11df45: 848c2df4-ddc4-4a26-4df1-600712ee20ba
+    - 87762d2d-d2aa-46f7-b06f-cadbb8aab829: 87762d2d-d2aa-46f7-4f90-3524475547d6
+    - 8b9c52cb-c0ed-4d2f-9372-1fe1f49a37d0: 8b9c52cb-c0ed-4d2f-6c8d-e01e0b65c82f
+    - 8fb95b77-19ce-40f8-9844-560a93483f3d: 8fb95b77-19ce-40f8-67bb-a9f56cb7c0c2
+    - 9248615d-4866-4e49-8c85-6739b3ac470f: 9248615d-4866-4e49-737a-98c64c53b8f0
+    - 9367cb8e-f011-4ed3-870d-8104fd036f9f: 9367cb8e-f011-4ed3-78f2-7efb02fc9060
+    - 945de854-622c-4f32-94b1-c8a03de9ff73: 945de854-622c-4f32-6b4e-375fc216008c
+    - 97c9dbca-bba4-4aff-8305-486e4cc03d3f: 97c9dbca-bba4-4aff-7cfa-b791b33fc2c0
+    - 99181040-bfdf-42ad-8ec5-e4bea8fd714f: 99181040-bfdf-42ad-713a-1b4157028eb0
+    - 997faa85-8b01-48b6-b266-64bfe9cc9441: 997faa85-8b01-48b6-4d99-9b4016336bbe
+    - 9c23e976-70db-4d35-a4af-02164ecea183: 9c23e976-70db-4d35-5b50-fde9b1315e7c
+    - 9d8d6520-cf40-4284-82a4-eb8463cead9b: 9d8d6520-cf40-4284-7d5b-147b9c315264
+    - 9e29a07e-8c06-4fea-a4d8-a5c6c098c7a2: 9e29a07e-8c06-4fea-5b27-5a393f67385d
+    - a2ae79f8-b9dc-43ab-8daf-3f943f91b64b: a2ae79f8-b9dc-43ab-7250-c06bc06e49b4
+    - a77a44f1-8514-4a5c-99a7-470763001f4e: a77a44f1-8514-4a5c-6658-b8f89cffe0b1
+    - acc208d7-122f-4ffd-af22-780ab8563e92: acc208d7-122f-4ffd-50dd-87f547a9c16d
+    - ada647c8-7c91-4645-837b-60c0301b4e60: ada647c8-7c91-4645-7c84-9f3fcfe4b19f
+    - b1effe64-fad1-4cba-a267-4bb46ab24f07: b1effe64-fad1-4cba-5d98-b44b954db0f8
+    - b362c035-7460-4851-afc9-a4f7a655e4bf: b362c035-7460-4851-5036-5b0859aa1b40
+    - b44bd951-f6e3-434d-bceb-5952a32dca7d: b44bd951-f6e3-434d-4314-a6ad5cd23582
+    - b5f8de56-bd55-4dfa-9627-73d18542e47e: b5f8de56-bd55-4dfa-69d8-8c2e7abd1b81
+    - b76b48c3-8587-4723-8af1-6834d885e747: b76b48c3-8587-4723-750e-97cb277a18b8
+    - b844d601-aa55-4829-a2ad-a1370e5ae016: b844d601-aa55-4829-5d52-5ec8f1a51fe9
+    - bd7892ca-3bf5-45ed-875c-316f0b1b5810: bd7892ca-3bf5-45ed-78a3-ce90f4e4a7ef
+    - bd8c7980-3881-4441-9225-737bdf2cc2bf: bd8c7980-3881-4441-6dda-8c8420d33d40
+    - bfef7af3-8fcf-4850-a257-1011afa48f75: bfef7af3-8fcf-4850-5da8-efee505b708a
+    - c53ee76e-1eb6-4332-b3e3-f975dc0dbf58: c53ee76e-1eb6-4332-4c1c-068a23f240a7
+    - cc6f5b21-7d46-4950-9e09-7e931a477ab8: cc6f5b21-7d46-4950-61f6-816ce5b88547
+    - cf161b63-ef99-4aec-af95-a5d822496958: cf161b63-ef99-4aec-506a-5a27ddb696a7
+    - d4b37b24-0e1e-4d1b-bdd6-2aa51df7f7e4: d4b37b24-0e1e-4d1b-4229-d55ae208081b
+    - d7ff4def-a535-41e1-8a30-23f894bddbc5: d7ff4def-a535-41e1-75cf-dc076b42243a
+    - dc375362-8491-4ccc-b3a0-1383c33677d2: dc375362-8491-4ccc-4c5f-ec7c3cc9882d
+    - e1466314-0b86-44ce-9744-f0062f3747b7: e1466314-0b86-44ce-68bb-0ff9d0c8b848
+    - e2631845-0c7a-4fb8-8e1a-ea6c0b830031: e2631845-0c7a-4fb8-71e5-1593f47cffce
+    - e2c9a02a-9c41-4b40-a43a-5737cd7c69f9: e2c9a02a-9c41-4b40-5bc5-a8c832839606
+    - e38bbb46-7dae-4fda-b18c-a9e66cc325d5: e38bbb46-7dae-4fda-4e73-5619933cda2a
+    - e3f5d5b9-ae9a-44bb-90ba-b69736c695f1: e3f5d5b9-ae9a-44bb-6f45-4968c9396a0e
+    - e5b9f6c8-9728-4e04-8757-b60814eaa762: e5b9f6c8-9728-4e04-78a8-49f7eb15589d
+    - e5eaa5c6-cf64-432d-a6b2-899d9400ea1c: e5eaa5c6-cf64-432d-594d-76626bff15e3
+    - e602085b-0133-48e2-b687-1234cb1a2350: e602085b-0133-48e2-4978-edcb34e5dcaf
+    - eeb99cd9-d825-42d9-ab2c-9c1e3a4199a6: eeb99cd9-d825-42d9-54d3-63e1c5be6659
+    - f3e8c91e-3b4a-4b46-9971-84af50457bf3: f3e8c91e-3b4a-4b46-668e-7b50afba840c
+    - f449b1e7-d4a7-4951-b7b2-78cd78c68a34: f449b1e7-d4a7-4951-484d-8732873975cb
+    - f4ff5d1b-cef3-4f26-894a-136c273fb3cf: f4ff5d1b-cef3-4f26-76b5-ec93d8c04c30
+    - f9375617-9141-426b-b9c4-175790ce8949: f9375617-9141-426b-463b-e8a86f3176b6
+    - fc28a191-7ab3-48a0-b851-bc153a12bf45: fc28a191-7ab3-48a0-47ae-43eac5ed40ba
+  Name: Road_Props_vol.1
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: -250.000000, z: -800.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 260dd9e6-e09e-423f-acfa-12ab201f265e
+    - !<own> 3f6be9da-d9fc-4fb1-89d2-6211d51b7063
+    - !<own> b76b48c3-8587-4723-8af1-6834d885e747
+    - !<own> 97c9dbca-bba4-4aff-8305-486e4cc03d3f
+    - !<own> 78962aba-62fe-417b-940d-b0728b549990
+    - !<own> 0afc1925-0c34-4a7b-80cf-a5a3c6093282
+    - !<own> 771ad8ea-48e3-4b95-a84d-f128c5a610fd
+    - !<own> cc6f5b21-7d46-4950-9e09-7e931a477ab8
+    - !<own> 82024f05-9528-4103-abcc-2514216c700f
+    - !<own> eeb99cd9-d825-42d9-ab2c-9c1e3a4199a6
+    - !<own> 630ebdc5-3cd6-4faa-9cf5-7902e32dc802
+    - !<own> f3e8c91e-3b4a-4b46-9971-84af50457bf3
+    - !<own> 1e617cb8-334a-4a8c-bfc0-32aa8126c59e
+    - !<own> a2ae79f8-b9dc-43ab-8daf-3f943f91b64b
+    - !<own> bfef7af3-8fcf-4850-a257-1011afa48f75
+    - !<own> 9e29a07e-8c06-4fea-a4d8-a5c6c098c7a2
+    - !<own> e2c9a02a-9c41-4b40-a43a-5737cd7c69f9
+    - !<own> 7abf55f4-45b0-4d78-92dd-fbc8695eb1ef
+    - !<own> b362c035-7460-4851-afc9-a4f7a655e4bf
+    - !<own> 6ed781ff-e3cf-4f03-b468-3327a5881b1b
+    - !<own> 4b28c074-0048-498c-aa81-48e701091d9a
+    - !<own> 4dd1a7d8-91fb-4470-9b26-1fc7ff1e9401
+    - !<own> b844d601-aa55-4829-a2ad-a1370e5ae016
+    - !<own> c53ee76e-1eb6-4332-b3e3-f975dc0dbf58
+    - !<own> 997faa85-8b01-48b6-b266-64bfe9cc9441
+    - !<own> 08f4fda3-4759-41f2-82fc-4b6db6b6dd7b
+    - !<own> 7b348bc1-bdcb-4db2-90d2-125d3f840d15
+    - !<own> 5663d116-8690-417a-915e-691d82d3cb78
+    - !<own> b44bd951-f6e3-434d-bceb-5952a32dca7d
+    - !<own> e1466314-0b86-44ce-9744-f0062f3747b7
+    - !<own> 827a7d3d-70ee-444c-8b14-a3e63a0e709e
+    - !<own> ada647c8-7c91-4645-837b-60c0301b4e60
+    - !<own> 848c2df4-ddc4-4a26-b20e-9ff8ed11df45
+    - !<own> bd7892ca-3bf5-45ed-875c-316f0b1b5810
+    - !<own> 589cf637-6c28-4082-81e0-cb1b6b1cfca6
+    - !<own> 716d7641-2f35-40a1-8d24-129c0e95d064
+    - !<own> 327d2eca-3283-4f47-92ad-9810fba1af2b
+    - !<own> e3f5d5b9-ae9a-44bb-90ba-b69736c695f1
+    - !<own> 23b3b1c2-63b6-42db-be07-827096220812
+    - !<own> 945de854-622c-4f32-94b1-c8a03de9ff73
+    - !<own> 1f5a552f-ca1a-410f-9f33-bb6d3bd701f0
+    - !<own> cf161b63-ef99-4aec-af95-a5d822496958
+    - !<own> b5f8de56-bd55-4dfa-9627-73d18542e47e
+  Components:
+    []
+- !<RenderMeshVisual/8b9c52cb-c0ed-4d2f-9372-1fe1f49a37d0>
+  PrefabRemaps:
+    []
+  Name: component_30
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> de308b46-2625-45a5-b209-8610b35b2869
+  Mesh: !<reference> 29fff53b-12d3-4621-93ef-7332172e9c0d
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/8fb95b77-19ce-40f8-9844-560a93483f3d>
+  PrefabRemaps:
+    []
+  Name: component_7
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 7b322364-cf19-4cf3-98f5-edfebb1e2b01
+  Mesh: !<reference> ad299699-4711-47e1-9341-94206a1cc7f3
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/9248615d-4866-4e49-8c85-6739b3ac470f>
+  PrefabRemaps:
+    []
+  Name: component_4
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> e0678ffa-7891-4881-8376-a60d2d421f21
+  Mesh: !<reference> 8f19c31a-e5ed-4b1e-be56-b70d01bd300e
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/9367cb8e-f011-4ed3-870d-8104fd036f9f>
+  PrefabRemaps:
+    []
+  Name: component_18
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 4ea815a2-94f5-45e7-8c07-1b99c439816e
+  Mesh: !<reference> 74963a49-b62c-453c-b7c3-78e1aa811626
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/945de854-622c-4f32-94b1-c8a03de9ff73>
+  PrefabRemaps:
+    []
+  Name: road_traffic_cone_small_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -145.000000, y: 0.000000, z: 200.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 9d8d6520-cf40-4284-82a4-eb8463cead9b
+- !<SceneObject/97c9dbca-bba4-4aff-8305-486e4cc03d3f>
+  PrefabRemaps:
+    []
+  Name: road_fence_metal_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 340.000000, y: 0.000000, z: 200.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> dc375362-8491-4ccc-b3a0-1383c33677d2
+- !<RenderMeshVisual/99181040-bfdf-42ad-8ec5-e4bea8fd714f>
+  PrefabRemaps:
+    []
+  Name: component_27
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> bdec2efb-ba58-40f5-b0dc-d89d5538b6cc
+  Mesh: !<reference> 3853c7b2-51dd-4b2c-b0b3-1bb9a31b7fb9
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/997faa85-8b01-48b6-b266-64bfe9cc9441>
+  PrefabRemaps:
+    []
+  Name: road_mailbox_blue_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -150.000000, y: 0.000000, z: 110.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 38aa3788-795d-445b-971d-3816e5851622
+- !<RenderMeshVisual/9c23e976-70db-4d35-a4af-02164ecea183>
+  PrefabRemaps:
+    []
+  Name: component_14
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 6aa71c05-3978-4c41-80d2-a9a406cbe7f3
+  Mesh: !<reference> 6bd52e7b-ae83-465f-88e0-d2c431948313
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/9d8d6520-cf40-4284-82a4-eb8463cead9b>
+  PrefabRemaps:
+    []
+  Name: component_34
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> d5f4ac4c-540c-4e09-b6ed-fde22a231fb4
+  Mesh: !<reference> d1e469df-21dd-49a4-9863-4202fbec0414
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/9e29a07e-8c06-4fea-a4d8-a5c6c098c7a2>
+  PrefabRemaps:
+    []
+  Name: road_barrier_white_orange_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -390.000000, y: 0.000000, z: 110.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 80775a89-9ab6-465c-97a6-5eabd65f664f
+- !<SceneObject/a2ae79f8-b9dc-43ab-8daf-3f943f91b64b>
+  PrefabRemaps:
+    []
+  Name: road_barrier_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -265.000000, y: 0.000000, z: 110.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 67dbd8d5-dcac-489d-8b98-3916417a676a
+- !<RenderMeshVisual/a77a44f1-8514-4a5c-99a7-470763001f4e>
+  PrefabRemaps:
+    []
+  Name: component_8
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> a992efe1-2d6b-4922-b24c-5008c01222ca
+  Mesh: !<reference> 25f3362a-68e0-48af-bb8d-5c888fad7a30
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/acc208d7-122f-4ffd-af22-780ab8563e92>
+  PrefabRemaps:
+    []
+  Name: component_32
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 6f426ac1-207b-45f9-ac83-314cc5de5a70
+  Mesh: !<reference> a6d20bca-3e66-4262-a178-4b2a815568d4
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/ada647c8-7c91-4645-837b-60c0301b4e60>
+  PrefabRemaps:
+    []
+  Name: road_sign_speed_limit_35_bitmoji_copy_1
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 700.359009, y: 0.000000, z: 110.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 4abb1eb5-b816-47fe-8bf4-48b77b8aa3e5
+- !<RenderMeshVisual/b1effe64-fad1-4cba-a267-4bb46ab24f07>
+  PrefabRemaps:
+    []
+  Name: component_24
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 7a3ba28c-c56e-4bd4-9233-d125f4d2242a
+  Mesh: !<reference> 85635564-0461-40db-ad20-2b0136ff194d
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/b362c035-7460-4851-afc9-a4f7a655e4bf>
+  PrefabRemaps:
+    []
+  Name: road_bollard_yellow_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 35.000000, y: 0.000000, z: 200.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> e38bbb46-7dae-4fda-b18c-a9e66cc325d5
+- !<SceneObject/b44bd951-f6e3-434d-bceb-5952a32dca7d>
+  PrefabRemaps:
+    []
+  Name: road_sign_give_way_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 490.000000, y: -0.000001, z: 110.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 80f85601-e6fc-4a35-9112-93a577cccab5
+- !<SceneObject/b5f8de56-bd55-4dfa-9627-73d18542e47e>
+  PrefabRemaps:
+    []
+  Name: road_trash_can_bitmoji 2
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -467.119354, y: 0.000000, z: 200.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 43595044-74ac-4d79-bc75-262c8ced5239
+- !<SceneObject/b76b48c3-8587-4723-8af1-6834d885e747>
+  PrefabRemaps:
+    []
+  Name: road_bus_stop
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> fc28a191-7ab3-48a0-b851-bc153a12bf45
+- !<SceneObject/b844d601-aa55-4829-a2ad-a1370e5ae016>
+  PrefabRemaps:
+    []
+  Name: road_gas_pump_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 85.000000, y: 0.000000, z: 110.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> e2631845-0c7a-4fb8-8e1a-ea6c0b830031
+- !<SceneObject/bd7892ca-3bf5-45ed-875c-316f0b1b5810>
+  PrefabRemaps:
+    []
+  Name: road_sign_stop_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 560.000000, y: -0.000001, z: 110.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 4de92015-4bbd-421d-b372-d16230375457
+- !<RenderMeshVisual/bd8c7980-3881-4441-9225-737bdf2cc2bf>
+  PrefabRemaps:
+    []
+  Name: component_23
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 5ceccd1d-ef24-403b-8853-3ce57d9eb025
+  Mesh: !<reference> da1da058-fa58-4f7e-9a51-56397ded43d0
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/bfef7af3-8fcf-4850-a257-1011afa48f75>
+  PrefabRemaps:
+    []
+  Name: road_barrier_striped_yellow_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -100.000000, y: 0.000000, z: 200.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> e602085b-0133-48e2-b687-1234cb1a2350
+- !<SceneObject/c53ee76e-1eb6-4332-b3e3-f975dc0dbf58>
+  PrefabRemaps:
+    []
+  Name: road_hotdog_cart_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 400.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 2743dff4-7f14-4f92-89a1-b1ef0fc39731
+- !<SceneObject/cc6f5b21-7d46-4950-9e09-7e931a477ab8>
+  PrefabRemaps:
+    []
+  Name: road_traffic_light_pole_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 290.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 8fb95b77-19ce-40f8-9844-560a93483f3d
+- !<SceneObject/cf161b63-ef99-4aec-af95-a5d822496958>
+  PrefabRemaps:
+    []
+  Name: road_trash_can_bitmoji 1
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -405.651825, y: 0.000000, z: 200.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 6a21ddaf-5c27-4a72-ba6a-eba170e89597
+- !<RenderMeshVisual/d4b37b24-0e1e-4d1b-bdd6-2aa51df7f7e4>
+  PrefabRemaps:
+    []
+  Name: component_10
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 80737f16-4dcd-42e4-aae9-97175bc86fd0
+  Mesh: !<reference> aef5d9c6-a92f-4473-a298-4c8f8b6fba3b
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/d7ff4def-a535-41e1-8a30-23f894bddbc5>
+  PrefabRemaps:
+    []
+  Name: component_13
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 1383333f-0b29-443c-81b9-05bafa5c6652
+  Mesh: !<reference> af70b728-1cb4-4504-af81-20bdc4df18c2
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/dc375362-8491-4ccc-b3a0-1383c33677d2>
+  PrefabRemaps:
+    []
+  Name: component_3
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 9bbf39ac-5a60-4e78-b9cc-1655821c67da
+  Mesh: !<reference> ed04badf-a7a4-4b1b-9147-df17a5f8d91b
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/e1466314-0b86-44ce-9744-f0062f3747b7>
+  PrefabRemaps:
+    []
+  Name: road_sign_no_entry_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 430.000000, y: -0.000001, z: 110.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 2dedc3e8-52b2-4fb1-9a92-655455000b22
+- !<RenderMeshVisual/e2631845-0c7a-4fb8-8e1a-ea6c0b830031>
+  PrefabRemaps:
+    []
+  Name: component_19
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 369f2bb8-1c5e-4a59-9958-1a2a4208dc4e
+  Mesh: !<reference> c650b00d-d8c5-4279-a57b-243e8cf70e52
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/e2c9a02a-9c41-4b40-a43a-5737cd7c69f9>
+  PrefabRemaps:
+    []
+  Name: road_barrier_white_orange_bitmoji_copy
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: -479.506805, y: 0.000000, z: 110.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> d7ff4def-a535-41e1-8a30-23f894bddbc5
+- !<RenderMeshVisual/e38bbb46-7dae-4fda-b18c-a9e66cc325d5>
+  PrefabRemaps:
+    []
+  Name: component_15
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> cb11c334-938b-45fc-9ffe-098d74039153
+  Mesh: !<reference> 7a25171e-2e08-4c91-b601-9e69ac5d1ecf
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/e3f5d5b9-ae9a-44bb-90ba-b69736c695f1>
+  PrefabRemaps:
+    []
+  Name: road_trash_bag_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 105.000000, y: 0.000000, z: 200.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> acc208d7-122f-4ffd-af22-780ab8563e92
+- !<RenderMeshVisual/e5b9f6c8-9728-4e04-8757-b60814eaa762>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 70bf72f2-78db-4441-aafa-3a938c262360
+  Mesh: !<reference> 40b22d05-a66f-4bcd-b2c7-2d59b3ef9eb1
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/e5eaa5c6-cf64-432d-a6b2-899d9400ea1c>
+  PrefabRemaps:
+    []
+  Name: component_6
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> e8ebcc7b-ba68-4234-90f6-2a45910d7d7e
+  Mesh: !<reference> ad94c2ed-1d33-4b4f-ab44-d6f49cb156d6
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/e602085b-0133-48e2-b687-1234cb1a2350>
+  PrefabRemaps:
+    []
+  Name: component_12
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 4564379b-5350-4717-b64d-0f40bdfbee74
+  Mesh: !<reference> b8fec891-24cc-48c4-8bba-94e361d741ca
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/eeb99cd9-d825-42d9-ab2c-9c1e3a4199a6>
+  PrefabRemaps:
+    []
+  Name: road_street_light_duo_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 150.000000, y: 0.000000, z: 0.000078}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 10e973e0-f92d-4b4d-ac73-260b041a1716
+- !<SceneObject/f3e8c91e-3b4a-4b46-9971-84af50457bf3>
+  PrefabRemaps:
+    []
+  Name: road_street_light_solo_bitmoji
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 220.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> d4b37b24-0e1e-4d1b-bdd6-2aa51df7f7e4
+- !<RenderMeshVisual/f449b1e7-d4a7-4951-b7b2-78cd78c68a34>
+  PrefabRemaps:
+    []
+  Name: component_29
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> ebf03f4f-bcfc-44fc-a68b-a98af42fac6b
+  Mesh: !<reference> e6eaa4aa-32d9-47b2-9af2-4f4aa944a63e
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/f4ff5d1b-cef3-4f26-894a-136c273fb3cf>
+  PrefabRemaps:
+    []
+  Name: component_31
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 8dc5ee02-f277-49b8-98d4-a1f1155aa833
+  Mesh: !<reference> 9ab28d21-d589-4b8c-9d48-0d85a5d28472
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/f9375617-9141-426b-b9c4-175790ce8949>
+  PrefabRemaps:
+    []
+  Name: component_16
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 79b4d6f3-a033-4963-8a11-78de5d791818
+  Mesh: !<reference> 033b89f9-297a-4d15-a808-5c63986663d3
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/fc28a191-7ab3-48a0-b851-bc153a12bf45>
+  PrefabRemaps:
+    []
+  Name: component_2
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 98920e7d-bd3d-4abb-a098-2b496e190539
+  Mesh: !<reference> 044b67bb-e36a-4d31-916b-34fce82995f5
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
