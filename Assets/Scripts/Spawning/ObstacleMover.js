@@ -25,9 +25,16 @@ function respawnObstacle(obstacle) {
 
 script.resetObstacles = function () {
     for (var i = 0; i < script.obstacles.length; i++) {
-        if (script.obstacles[i]) {
-            respawnObstacle(script.obstacles[i]);
-        }
+        var obstacle = script.obstacles[i];
+        if (!obstacle) continue;
+
+        var transform = obstacle.getTransform();
+        var pos = transform.getLocalPosition();
+
+        pos.x = getRandomLaneX();
+        pos.z = script.respawnZ - i * 1200 - Math.random() * 400;
+
+        transform.setLocalPosition(pos);
     }
 
     print("Obstacles reset");

@@ -30,9 +30,16 @@ function respawnCollectible(collectible) {
 
 script.resetCollectibles = function () {
     for (var i = 0; i < script.collectibles.length; i++) {
-        if (script.collectibles[i]) {
-            respawnCollectible(script.collectibles[i]);
-        }
+        var collectible = script.collectibles[i];
+        if (!collectible) continue;
+
+        var transform = collectible.getTransform();
+        var pos = transform.getLocalPosition();
+
+        pos.x = getRandomLaneX();
+        pos.z = script.respawnZ - 600 - i * 900 - Math.random() * 300;
+
+        transform.setLocalPosition(pos);
     }
 
     print("Collectibles reset");

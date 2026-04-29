@@ -101,3 +101,16 @@ function setVisible(obj, visible) {
         meshes[i].enabled = visible;
     }
 }
+
+script.resetCollisionState = function () {
+    invulnerabilityTimer = 0;
+    blinkTimer = 0;
+    blinkIntervalTimer = 0;
+    blinkState = true;
+
+    if (script.playerVisual) {
+        script.playerVisual.enabled = true;
+    }
+
+    print("Collision state reset");
+};
