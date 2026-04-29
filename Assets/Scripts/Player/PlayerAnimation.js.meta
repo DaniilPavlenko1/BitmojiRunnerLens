@@ -1,0 +1,52 @@
+- !<AssetImportMetadata/b5ce62f8-1851-48e6-ab34-1d1a2f769de9>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 35257472-4c0b-4c03-89b2-f6256799f5ab
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 35257472-4c0b-4c03-89b2-f6256799f5ab
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> 51cb8cde-bdb1-4fbf-884e-2ad4847335b0
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/51cb8cde-bdb1-4fbf-884e-2ad4847335b0>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 1d07b36a-5f6a-4c71-a5fa-dcf60b72ebe5
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    animationPlayer: false
+    gameController: false
+    jumpDuration: false
+    playerJump: false
+    playerMovement: false
+    sideDuration: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - animationPlayer: !<reference.AnimationPlayer> 00000000-0000-0000-0000-000000000000
+      gameController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      playerJump: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      playerMovement: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      sideDuration: 0.250000
+      jumpDuration: 0.500000
+  ScriptTypes:
+    -
+      {}
