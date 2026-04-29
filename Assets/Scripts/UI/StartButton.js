@@ -1,23 +1,26 @@
 //@input Component.ScriptComponent gameController
-//@input Component.InteractionComponent interaction
 //@input SceneObject startScreen
 
 function startGame() {
-    if (!script.gameController || script.gameController.isRunning()) {
+    if (!script.gameController || !script.gameController.isReady()) {
+        return;
+    }
+
+    if (!script.startScreen || !script.startScreen.enabled) {
         return;
     }
 
     script.gameController.startGame();
 
-    print("Start pressed");
+    print("Tap anywhere start");
 }
 
 script.createEvent("OnStartEvent").bind(function () {
     if (script.startScreen) {
         script.startScreen.enabled = true;
     }
+});
 
-    if (script.interaction) {
-        script.interaction.onTouchEnd.add(startGame);
-    }
+script.createEvent("TouchEndEvent").bind(function () {
+    startGame();
 });
