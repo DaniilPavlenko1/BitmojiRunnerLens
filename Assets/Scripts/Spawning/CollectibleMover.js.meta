@@ -30,6 +30,7 @@
     collectDistanceZ: false
     collectibles: false
     despawnZ: false
+    difficultyService: false
     gameController: false
     laneDistance: false
     moveSpeed: false
@@ -45,7 +46,8 @@
   Attachments:
     []
   DefaultScriptInputs:
-    - gameController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+    - difficultyService: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      gameController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       scoreService: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       playerRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       collectibles: !<reference.SceneObject[]>

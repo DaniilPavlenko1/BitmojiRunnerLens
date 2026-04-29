@@ -1,5 +1,5 @@
 // MovingWorld.js
-
+//@input Component.ScriptComponent difficultyService
 //@input Component.ScriptComponent gameController
 //@input SceneObject[] movingObjects
 //@input float moveSpeed = 250.0
@@ -23,7 +23,8 @@ script.createEvent("UpdateEvent").bind(function () {
         var transform = obj.getTransform();
         var pos = transform.getLocalPosition();
 
-        pos.z += script.moveSpeed * dt;
+        var speed = script.difficultyService ? script.difficultyService.getSpeed() : script.moveSpeed;
+        pos.z += speed * dt;
 
         if (pos.z > script.resetZ) {
             pos.z -= script.segmentLength * script.movingObjects.length;

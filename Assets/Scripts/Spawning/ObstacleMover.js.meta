@@ -27,6 +27,7 @@
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
     despawnZ: false
+    difficultyService: false
     gameController: false
     laneDistance: false
     moveSpeed: false
@@ -41,7 +42,8 @@
   Attachments:
     []
   DefaultScriptInputs:
-    - gameController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+    - difficultyService: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      gameController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       obstacles: !<reference.SceneObject[]>
         []
       moveSpeed: !<float> 700.000000

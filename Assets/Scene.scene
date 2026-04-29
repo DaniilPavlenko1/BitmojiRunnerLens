@@ -397,6 +397,7 @@
     {}
   ScriptInputs:
     "":
+      difficultyService: !<reference.ScriptComponent> 3414df1a-ef64-4783-b884-98a8628a8f8f
       gameController: !<reference.ScriptComponent> f4f88c7c-2688-41e9-9db2-8f1e96af7f03
       movingObjects: !<reference.SceneObject[]>
         - !<reference> f59aab61-bea8-4aa0-b82f-dfb03e164ee9
@@ -439,6 +440,26 @@
     - !<own> 2a8585eb-45bd-4b02-8a6a-a9bb5ed0ea95
   Components:
     - !<own> c6936f52-8f42-4527-8ff0-180eb6fb7fc5
+- !<ScriptComponent/3414df1a-ef64-4783-b884-98a8628a8f8f>
+  PrefabRemaps:
+    []
+  Name: DifficultyService
+  Enabled: true
+  ScriptAsset: !<reference> 6cf65033-4411-4478-aa22-bb0b9e993fe8
+  ScriptInputsDefault:
+    startSpeed: true
+    acceleration: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      gameController: !<reference.ScriptComponent> f4f88c7c-2688-41e9-9db2-8f1e96af7f03
+      startSpeed: !<float> 700.000000
+      maxSpeed: !<float> 1700.000000
+      acceleration: !<float> 25.000000
+  ScriptTypes:
+    "":
+      {}
 - !<ScriptComponent/342123b6-491d-4511-bbbc-4b48ecd0e51f>
   PrefabRemaps:
     []
@@ -681,6 +702,7 @@
     {}
   ScriptInputs:
     "":
+      difficultyService: !<reference.ScriptComponent> 3414df1a-ef64-4783-b884-98a8628a8f8f
       gameController: !<reference.ScriptComponent> f4f88c7c-2688-41e9-9db2-8f1e96af7f03
       scoreService: !<reference.ScriptComponent> 2ded7d10-1f34-4f66-b718-19ebb6cfcd92
       playerRoot: !<reference.SceneObject> 275a952d-f181-44fd-8ebf-aec4ebdc314a
@@ -926,6 +948,7 @@
     {}
   ScriptInputs:
     "":
+      difficultyService: !<reference.ScriptComponent> 3414df1a-ef64-4783-b884-98a8628a8f8f
       gameController: !<reference.ScriptComponent> f4f88c7c-2688-41e9-9db2-8f1e96af7f03
       obstacles: !<reference.SceneObject[]>
         - !<reference> 4ca81d42-415c-4005-8f7f-540d272d789d
@@ -1102,7 +1125,7 @@
   Children:
     []
   Components:
-    []
+    - !<own> 3414df1a-ef64-4783-b884-98a8628a8f8f
 - !<InteractionComponent/c8456cc5-3a86-4006-8038-5eae948aada6>
   PrefabRemaps:
     []
@@ -1476,6 +1499,7 @@
       playerMovement: !<reference.ScriptComponent> 4ba20141-33c9-40f8-9213-5519d19d1aca
       obstacleMover: !<reference.ScriptComponent> bc5d3801-8086-440e-8a62-4cb199c97450
       collectibleMover: !<reference.ScriptComponent> 821826d3-368d-46d0-8255-e8d3d6acec38
+      difficultyService: !<reference.ScriptComponent> 3414df1a-ef64-4783-b884-98a8628a8f8f
       interaction: !<reference.InteractionComponent> 6d13992a-4219-4609-9b4b-9d7b9fa2f3e0
   ScriptTypes:
     "":

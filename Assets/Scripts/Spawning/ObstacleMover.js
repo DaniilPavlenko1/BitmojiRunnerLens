@@ -1,5 +1,6 @@
 // ObstacleMover.js
 
+//@input Component.ScriptComponent difficultyService
 //@input Component.ScriptComponent gameController
 //@input SceneObject[] obstacles
 //@input float moveSpeed = 700.0
@@ -49,7 +50,8 @@ script.createEvent("UpdateEvent").bind(function () {
         var transform = obstacle.getTransform();
         var pos = transform.getLocalPosition();
 
-        pos.z += script.moveSpeed * dt;
+        var speed = script.difficultyService ? script.difficultyService.getSpeed() : script.moveSpeed;
+        pos.z += speed * dt;
 
         if (pos.z > script.despawnZ) {
             pos.x = getRandomLaneX();

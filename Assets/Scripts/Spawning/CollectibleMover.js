@@ -1,5 +1,6 @@
 // CollectibleMover.js
 
+//@input Component.ScriptComponent difficultyService
 //@input Component.ScriptComponent gameController
 //@input Component.ScriptComponent scoreService
 //@input SceneObject playerRoot
@@ -52,7 +53,8 @@ script.createEvent("UpdateEvent").bind(function () {
         var transform = collectible.getTransform();
         var pos = transform.getLocalPosition();
 
-        pos.z += script.moveSpeed * dt;
+        var speed = script.difficultyService ? script.difficultyService.getSpeed() : script.moveSpeed;
+        pos.z += speed * dt;
 
         var dz = Math.abs(pos.z - playerPos.z);
         var dx = Math.abs(pos.x - playerPos.x);

@@ -4,6 +4,7 @@
 //@input Component.ScriptComponent playerMovement
 //@input Component.ScriptComponent obstacleMover
 //@input Component.ScriptComponent collectibleMover
+//@input Component.ScriptComponent difficultyService
 //@input Component.InteractionComponent interaction
 
 function restartGame() {
@@ -16,6 +17,7 @@ function restartGame() {
     if (script.playerMovement) script.playerMovement.resetPlayer();
     if (script.obstacleMover) script.obstacleMover.resetObstacles();
     if (script.collectibleMover) script.collectibleMover.resetCollectibles();
+    if (script.difficultyService) script.difficultyService.resetDifficulty();
 
     script.gameController.resetGame();
 

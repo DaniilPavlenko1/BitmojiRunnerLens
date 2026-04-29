@@ -26,6 +26,7 @@
   ExportUid: 00000000-0000-0000-0000-000000000000
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
+    difficultyService: false
     gameController: false
     moveSpeed: false
     movingObjects: false
@@ -40,7 +41,8 @@
   Attachments:
     []
   DefaultScriptInputs:
-    - gameController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+    - difficultyService: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      gameController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       movingObjects: !<reference.SceneObject[]>
         []
       moveSpeed: !<float> 250.000000
