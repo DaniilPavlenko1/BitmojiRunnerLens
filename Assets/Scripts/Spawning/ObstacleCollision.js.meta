@@ -34,6 +34,7 @@
     obstacles: false
     playerJump: false
     playerRoot: false
+    playerVisual: false
     playerZ: false
   ScriptTypesHidden:
     {}
@@ -48,6 +49,7 @@
       livesService: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       playerJump: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       playerRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      playerVisual: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       obstacles: !<reference.SceneObject[]>
         []
       playerZ: !<float> -300.000000

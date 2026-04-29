@@ -4,6 +4,7 @@
 //@input Component.ScriptComponent livesService
 //@input Component.ScriptComponent playerJump
 //@input SceneObject playerRoot
+//@input SceneObject playerVisual
 //@input SceneObject[] obstacles
 
 //@input float playerZ = -300
@@ -12,10 +13,30 @@
 //@input float invulnerabilityTime = 1.0
 
 var invulnerabilityTimer = 0;
+var blinkTimer = 0;
+var blinkInterval = 0.12;
+var blinkIntervalTimer = 0;
+var blinkState = true;
 
 script.createEvent("UpdateEvent").bind(function () {
     if (!script.gameController || !script.gameController.isRunning()) {
         return;
+    }
+
+    // blinking logic MUST be before invulnerability return
+    if (blinkTimer > 0 && script.playerVisual) {
+        blinkTimer -= getDeltaTime();
+        blinkIntervalTimer -= getDeltaTime();
+
+        if (blinkIntervalTimer <= 0) {
+            blinkIntervalTimer = blinkInterval;
+            blinkState = !blinkState;
+            script.playerVisual.enabled = blinkState;
+        }
+
+        if (blinkTimer <= 0) {
+            script.playerVisual.enabled = true;
+        }
     }
 
     if (invulnerabilityTimer > 0) {
@@ -49,6 +70,13 @@ script.createEvent("UpdateEvent").bind(function () {
             print("Hit obstacle!");
 
             invulnerabilityTimer = script.invulnerabilityTime;
+            blinkTimer = script.invulnerabilityTime;
+            blinkIntervalTimer = 0;
+            blinkState = true;
+
+            if (script.playerVisual) {
+                script.playerVisual.enabled = true;
+            }
 
             var livesLeft = script.livesService.takeDamage();
 
@@ -64,3 +92,12 @@ script.createEvent("UpdateEvent").bind(function () {
         }
     }
 });
+
+function setVisible(obj, visible) {
+    if (!obj) return;
+
+    var meshes = obj.getComponents("Component.RenderMeshVisual");
+    for (var i = 0; i < meshes.length; i++) {
+        meshes[i].enabled = visible;
+    }
+}
