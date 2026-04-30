@@ -7,6 +7,7 @@
 //@input Component.ScriptComponent scoreService
 //@input Component.ScriptComponent playerJump
 //@input Component.ScriptComponent runnerSpawner
+//@input Component.ScriptComponent audioManager
 
 //@input SceneObject playerVisual
 
@@ -102,6 +103,9 @@ function handleCoin(sceneObject, tag) {
     deactivateObject(sceneObject);
 
     print("Coin collected by overlap");
+    if (script.audioManager) {
+        script.audioManager.playCoin();
+    }
 }
 
 function handleObstacle(sceneObject, tag) {
@@ -127,6 +131,9 @@ function handleObstacle(sceneObject, tag) {
         if (script.gameController) {
             script.gameController.gameOver();
         }
+        if (script.audioManager) {
+            script.audioManager.playGameOver();
+        }
 
         return;
     }
@@ -135,6 +142,9 @@ function handleObstacle(sceneObject, tag) {
     startBlink();
 
     print("Obstacle hit by overlap");
+    if (script.audioManager) {
+        script.audioManager.playHit();
+    }
 }
 
 function onOverlapEnter(eventData) {

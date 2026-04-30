@@ -1,0 +1,50 @@
+- !<AssetImportMetadata/f3c31436-6db2-45d6-822c-aa68b19be73e>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 8ef886e5-8e16-4fe4-847e-07f488e57189
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 8ef886e5-8e16-4fe4-847e-07f488e57189
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> de703c9a-032f-4743-b1af-999b1ef9f27b
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/de703c9a-032f-4743-b1af-999b1ef9f27b>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: dca6b5a4-78b5-4b87-a9a0-727c1f7709a6
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    coinAudio: false
+    gameController: false
+    gameOverAudio: false
+    hitAudio: false
+    musicAudio: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - musicAudio: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      coinAudio: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      hitAudio: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      gameOverAudio: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      gameController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}

@@ -30,6 +30,7 @@
     []
   Components:
     - !<own> 00000000-0000-0065-0000-000000000065
+    - !<own> 40e9cf6c-6c2e-409a-9428-b0455652200e
 - !<Camera/00000000-0000-0065-0000-000000000065>
   PrefabRemaps:
     []
@@ -171,6 +172,40 @@
   FalloffType: None
   FalloffRange: .inf
   ShadowType: None
+- !<AudioComponent/031b03ff-e05d-4c0c-a577-5a09d0592e69>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 9ede618e-ed77-4727-9adb-5fa364946ba0
+  EnableAutoplayLoop: false
+  Volume: 0.300000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
+- !<AudioComponent/0b449e22-3bae-4964-a5ff-e6712f1d9a13>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> f148014b-0073-4275-8328-9dca5bd9e990
+  EnableAutoplayLoop: false
+  Volume: 0.300000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
 - !<SceneObject/0ca7fbdf-39b1-4a3e-84d8-04b5bd612b23>
   PrefabRemaps:
     []
@@ -247,6 +282,7 @@
       scoreService: !<reference.ScriptComponent> 2ded7d10-1f34-4f66-b718-19ebb6cfcd92
       playerJump: !<reference.ScriptComponent> 4f636fc2-20dc-44d2-83e6-b136a2af5f5c
       runnerSpawner: !<reference.ScriptComponent> 1ff33442-6a6c-4276-9c65-55dac4256a81
+      audioManager: !<reference.ScriptComponent> d95db87d-b9ca-46d2-a1ce-571ce92eda77
       playerVisual: !<reference.SceneObject> 659d8459-95a7-455d-a73c-06c5527ae230
       invulnerabilityTime: !<float> 1.000000
   ScriptTypes:
@@ -351,6 +387,24 @@
     []
   Components:
     []
+- !<SceneObject/19a82dec-f4a4-48f2-bb50-e4b1a64f3fc7>
+  PrefabRemaps:
+    []
+  Name: AudioManager
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> f83140a2-2d12-4128-a888-eb0aeaca1f9c
+    - !<own> fea9bba0-abc0-45f7-a483-26ce79c5554b
+    - !<own> 481a8d6f-8e42-4f13-96f6-1b7a47468a38
+  Components:
+    - !<own> d95db87d-b9ca-46d2-a1ce-571ce92eda77
+    - !<own> 6460c96d-d14b-43ed-8847-0de5a7a67c0f
 - !<SceneObject/1f249394-450e-4f51-b1c4-a849a888f6f0>
   PrefabRemaps:
     []
@@ -624,6 +678,11 @@
     - !<own> 74ef7dca-1946-4a6d-9888-5409b27ea956
   Components:
     []
+- !<AudioListenerComponent/40e9cf6c-6c2e-409a-9428-b0455652200e>
+  PrefabRemaps:
+    []
+  Name: Audio Listener
+  Enabled: true
 - !<SceneObject/4553af30-8824-48e2-a524-5d0af4a1f09f>
   PrefabRemaps:
     []
@@ -640,6 +699,21 @@
   Components:
     - !<own> 16d0c9b9-f8f0-4371-b72d-362d41817683
     - !<own> c8456cc5-3a86-4006-8038-5eae948aada6
+- !<SceneObject/481a8d6f-8e42-4f13-96f6-1b7a47468a38>
+  PrefabRemaps:
+    []
+  Name: GameOver
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 9a430778-1368-4cd3-bc16-1f56a851645f
 - !<ScriptComponent/4ba20141-33c9-40f8-9213-5519d19d1aca>
   PrefabRemaps:
     []
@@ -704,6 +778,23 @@
   Components:
     - !<own> 6b458fd0-688e-4a48-81e9-01e791155cb2
     - !<own> 6a5e556c-3b97-4553-9190-4e4640ce7c39
+- !<AudioComponent/6460c96d-d14b-43ed-8847-0de5a7a67c0f>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 270527e1-d245-4a7c-8e99-fd03e5e09f6d
+  EnableAutoplayLoop: true
+  Volume: 0.300000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
 - !<ScriptComponent/656cdfe5-c548-4400-af34-4c6b3c3077f2>
   PrefabRemaps:
     []
@@ -828,9 +919,9 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 78.698730, y: 2464.458252, z: -10658.923828}
+    Position: {x: 351.783569, y: 2528.207764, z: -10658.923828}
     Rotation: {x: -8.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 9000.000000, y: 6000.000000, z: 32.000000}
+    Scale: {x: 9200.000000, y: 6000.000000, z: 32.000000}
     HasSegmentScaleCompensation: false
   Children:
     []
@@ -1137,6 +1228,23 @@
   BlendNormals: false
   BlendShapes:
     {}
+- !<AudioComponent/9a430778-1368-4cd3-bc16-1f56a851645f>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 926232ec-7428-469d-81ae-01717c6ee33d
+  EnableAutoplayLoop: false
+  Volume: 0.300000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
 - !<Image/9f302dbe-673a-4f30-97db-ad4cdad05640>
   PrefabRemaps:
     []
@@ -1561,6 +1669,7 @@
     - !<own> 3105cc5b-3871-4409-a8bd-21f88d0eb0f6
     - !<own> 1f249394-450e-4f51-b1c4-a849a888f6f0
     - !<own> c6c0a386-b19f-4c1b-ae7c-cfea6247f203
+    - !<own> 19a82dec-f4a4-48f2-bb50-e4b1a64f3fc7
   Components:
     []
 - !<SceneObject/d635294b-6035-428e-92c5-deb3d06164e1>
@@ -1746,6 +1855,26 @@
     CapitalizationOverride: None
   DepthTest: false
   TwoSided: false
+- !<ScriptComponent/d95db87d-b9ca-46d2-a1ce-571ce92eda77>
+  PrefabRemaps:
+    []
+  Name: AudioManager
+  Enabled: true
+  ScriptAsset: !<reference> 8ef886e5-8e16-4fe4-847e-07f488e57189
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      musicAudio: !<reference.AudioComponent> 6460c96d-d14b-43ed-8847-0de5a7a67c0f
+      coinAudio: !<reference.AudioComponent> 031b03ff-e05d-4c0c-a577-5a09d0592e69
+      hitAudio: !<reference.AudioComponent> 0b449e22-3bae-4964-a5ff-e6712f1d9a13
+      gameOverAudio: !<reference.AudioComponent> 9a430778-1368-4cd3-bc16-1f56a851645f
+      gameController: !<reference.ScriptComponent> f4f88c7c-2688-41e9-9db2-8f1e96af7f03
+  ScriptTypes:
+    "":
+      {}
 - !<ScriptComponent/ed79b94c-030a-4361-a653-ce261bddcf92>
   PrefabRemaps:
     []
@@ -1861,6 +1990,21 @@
     []
   Components:
     - !<own> 99433e1e-3006-4a3b-9abd-12148477fb7b
+- !<SceneObject/f83140a2-2d12-4128-a888-eb0aeaca1f9c>
+  PrefabRemaps:
+    []
+  Name: PickUp
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 031b03ff-e05d-4c0c-a577-5a09d0592e69
 - !<Text/fe7c88ef-5111-4c6c-bc47-5d7550d67b2a>
   PrefabRemaps:
     []
@@ -1945,3 +2089,18 @@
     CapitalizationOverride: None
   DepthTest: false
   TwoSided: false
+- !<SceneObject/fea9bba0-abc0-45f7-a483-26ce79c5554b>
+  PrefabRemaps:
+    []
+  Name: Hit
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 0b449e22-3bae-4964-a5ff-e6712f1d9a13
