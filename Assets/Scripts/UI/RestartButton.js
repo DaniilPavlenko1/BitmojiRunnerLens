@@ -6,6 +6,8 @@
 //@input Component.ScriptComponent collectibleMover
 //@input Component.ScriptComponent difficultyService
 //@input Component.ScriptComponent obstacleCollision
+//@input Component.ScriptComponent playerOverlapHandler
+//@input Component.ScriptComponent runnerSpawner
 //@input Component.InteractionComponent interaction
 
 function restartGame() {
@@ -16,10 +18,9 @@ function restartGame() {
     if (script.scoreService) script.scoreService.resetScore();
     if (script.livesService) script.livesService.resetLives();
     if (script.playerMovement) script.playerMovement.resetPlayer();
-    if (script.obstacleMover) script.obstacleMover.resetObstacles();
-    if (script.collectibleMover) script.collectibleMover.resetCollectibles();
     if (script.difficultyService) script.difficultyService.resetDifficulty();
-    if (script.obstacleCollision) script.obstacleCollision.resetCollisionState();
+    if (script.playerOverlapHandler) script.playerOverlapHandler.resetCollisionState();
+    if (script.runnerSpawner)script.runnerSpawner.resetSpawner();
 
     script.gameController.resetGame();
 

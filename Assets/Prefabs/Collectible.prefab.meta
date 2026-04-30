@@ -49,8 +49,68 @@
     []
   Components:
     - !<own> 40c758ac-db8a-4238-4938-dd6b63506685
+    - !<own> cf63436e-9b4a-4831-ba6e-21fa5961df12
+    - !<own> fbf6087b-1ada-49b0-a458-f08a4905c1b5
+    - !<own> 9ab63b2e-7ee4-467b-95eb-7cce56ee886b
+- !<BodyComponent/9ab63b2e-7ee4-467b-95eb-7cce56ee886b>
+  PrefabRemaps:
+    []
+  Name: Physics Body
+  Enabled: true
+  Shape: !<Box>
+    FitVisual: true
+    Size: {x: 15.000000, y: 15.000000, z: 15.000000}
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 4686758f-bd55-4012-a649-23f447fa5632
+  WorldSettings: !<reference> 7d66a7f6-765e-4348-b3a0-1268a870e50f
+  EnableSmoothing: false
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: false
+  Dynamic: false
+  BodySetting: Density
+  BodySettingValue: 1.000000
+  Damping: 0.000000
+  AngularDamping: 0.000000
 - !<ObjectPrefabAssetData/be100bdc-5f2b-4559-b1f8-e75c3e6bf9b3>
   Prototype: !<ObjectOwner/a3fd3a59-ab75-4da7-af07-e1f2016d2c61>
     PackagePath: ""
     objects:
       - !<own> 6e569910-82dd-49e1-63c2-5df9dd27348d
+- !<ColliderComponent/cf63436e-9b4a-4831-ba6e-21fa5961df12>
+  PrefabRemaps:
+    []
+  Name: Physics Collider
+  Enabled: true
+  Shape: !<Box>
+    FitVisual: true
+    Size: {x: 15.000000, y: 15.000000, z: 15.000000}
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 4686758f-bd55-4012-a649-23f447fa5632
+  WorldSettings: !<reference> 7d66a7f6-765e-4348-b3a0-1268a870e50f
+  EnableSmoothing: true
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: false
+- !<ScriptComponent/fbf6087b-1ada-49b0-a458-f08a4905c1b5>
+  PrefabRemaps:
+    []
+  Name: RunnerObjectTag
+  Enabled: true
+  ScriptAsset: !<reference> f68500c6-5bd4-455e-bcb7-621b26913f25
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      objectType: coin
+  ScriptTypes:
+    "":
+      {}

@@ -34,6 +34,8 @@
     obstacleCollision: false
     obstacleMover: false
     playerMovement: false
+    playerOverlapHandler: false
+    runnerSpawner: false
     scoreService: false
   ScriptTypesHidden:
     {}
@@ -52,6 +54,8 @@
       collectibleMover: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       difficultyService: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       obstacleCollision: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      playerOverlapHandler: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      runnerSpawner: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       interaction: !<reference.InteractionComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -

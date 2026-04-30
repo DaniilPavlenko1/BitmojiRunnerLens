@@ -1,20 +1,20 @@
-- !<AssetImportMetadata/712f3728-f98f-47d0-9cbe-173b916a6ad5>
+- !<AssetImportMetadata/7b5ab7ae-1307-4732-ab28-e5f549dde906>
   ImportedAssetIds:
-    JavaScriptAsset: !<reference> 5bbc048f-f5d0-4de2-9243-efeba97933c3
+    JavaScriptAsset: !<reference> 0ed7b1a7-1a02-49ce-95cc-2ae1128d568e
   ImporterName: JavaScriptAssetImporter
-  PrimaryAsset: !<reference> 5bbc048f-f5d0-4de2-9243-efeba97933c3
+  PrimaryAsset: !<reference> 0ed7b1a7-1a02-49ce-95cc-2ae1128d568e
   PackageType: NotAPackage
   LegacyPackagePolicy: ~
   ExtraData:
     {}
   AssetDataMap:
-    JavaScriptAsset: !<own> bc34d2df-3265-4c97-8d93-9490f221b22f
+    JavaScriptAsset: !<own> a59de0e4-7f4e-40fe-9a50-6d8f3b83872e
   DependentFiles:
     []
   ImporterSettings: !<AssetImporterSettings>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-- !<ScriptAssetData/bc34d2df-3265-4c97-8d93-9490f221b22f>
+- !<ScriptAssetData/a59de0e4-7f4e-40fe-9a50-6d8f3b83872e>
   SvgIcon: ""
   SetupScript:
     code: ""
@@ -22,20 +22,18 @@
   VersionMajor: 0
   VersionMinor: 0
   VersionPatch: 0
-  ComponentUid: 40b99c25-17d1-4753-b7bb-628fd35d3fe9
+  ComponentUid: 94b9e2a9-03c8-4c79-8a6d-5cf9aaa61aef
   ExportUid: 00000000-0000-0000-0000-000000000000
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
     gameController: false
-    hitDistanceX: false
-    hitDistanceZ: false
     invulnerabilityTime: false
     livesService: false
-    obstacles: false
+    playerCollider: false
     playerJump: false
-    playerRoot: false
     playerVisual: false
-    playerZ: false
+    runnerSpawner: false
+    scoreService: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -45,16 +43,13 @@
   Attachments:
     []
   DefaultScriptInputs:
-    - gameController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+    - playerCollider: !<reference.ColliderComponent> 00000000-0000-0000-0000-000000000000
+      gameController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       livesService: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      scoreService: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       playerJump: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
-      playerRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      runnerSpawner: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       playerVisual: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      obstacles: !<reference.SceneObject[]>
-        []
-      playerZ: !<float> -300.000000
-      hitDistanceZ: !<float> 120.000000
-      hitDistanceX: !<float> 120.000000
       invulnerabilityTime: !<float> 1.000000
   ScriptTypes:
     -

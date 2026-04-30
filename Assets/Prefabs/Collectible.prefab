@@ -29,6 +29,9 @@
   PrefabRemaps:
     - 40c758ac-db8a-4238-b6c7-22949caf997a: 40c758ac-db8a-4238-4938-dd6b63506685
     - 6e569910-82dd-49e1-9c3d-a20622d8cb72: 6e569910-82dd-49e1-63c2-5df9dd27348d
+    - 842400ef-1300-47c9-9084-3c169aac8e30: cf63436e-9b4a-4831-ba6e-21fa5961df12
+    - a1872162-9d9e-4504-b733-0a10f1bea814: 9ab63b2e-7ee4-467b-95eb-7cce56ee886b
+    - a7c45f7d-7d9c-4d53-ac4c-7f346ad7d394: fbf6087b-1ada-49b0-a458-f08a4905c1b5
   Name: Collectible
   Enabled: true
   Layers: 1
@@ -41,3 +44,63 @@
     []
   Components:
     - !<own> 40c758ac-db8a-4238-b6c7-22949caf997a
+    - !<own> 842400ef-1300-47c9-9084-3c169aac8e30
+    - !<own> a7c45f7d-7d9c-4d53-ac4c-7f346ad7d394
+    - !<own> a1872162-9d9e-4504-b733-0a10f1bea814
+- !<ColliderComponent/842400ef-1300-47c9-9084-3c169aac8e30>
+  PrefabRemaps:
+    []
+  Name: Physics Collider
+  Enabled: true
+  Shape: !<Box>
+    FitVisual: true
+    Size: {x: 15.000000, y: 15.000000, z: 15.000000}
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 4686758f-bd55-4012-a649-23f447fa5632
+  WorldSettings: !<reference> 7d66a7f6-765e-4348-b3a0-1268a870e50f
+  EnableSmoothing: true
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: false
+- !<BodyComponent/a1872162-9d9e-4504-b733-0a10f1bea814>
+  PrefabRemaps:
+    []
+  Name: Physics Body
+  Enabled: true
+  Shape: !<Box>
+    FitVisual: true
+    Size: {x: 15.000000, y: 15.000000, z: 15.000000}
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 4686758f-bd55-4012-a649-23f447fa5632
+  WorldSettings: !<reference> 7d66a7f6-765e-4348-b3a0-1268a870e50f
+  EnableSmoothing: false
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: false
+  Dynamic: false
+  BodySetting: Density
+  BodySettingValue: 1.000000
+  Damping: 0.000000
+  AngularDamping: 0.000000
+- !<ScriptComponent/a7c45f7d-7d9c-4d53-ac4c-7f346ad7d394>
+  PrefabRemaps:
+    []
+  Name: RunnerObjectTag
+  Enabled: true
+  ScriptAsset: !<reference> f68500c6-5bd4-455e-bcb7-621b26913f25
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      objectType: coin
+  ScriptTypes:
+    "":
+      {}

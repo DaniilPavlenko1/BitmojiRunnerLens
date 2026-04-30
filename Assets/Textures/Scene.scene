@@ -5,6 +5,7 @@
     - !<own> 0005641c-028d-459a-0000-000000014b4d
     - !<own> 94994e98-b2fa-4489-8c66-9009316722f4
     - !<own> 80ae0078-7fe4-4d49-9164-28f8178c0030
+    - !<own> 10c2f3ce-6cdf-4694-ba52-239d18d91724
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
       []
@@ -170,44 +171,6 @@
   FalloffType: None
   FalloffRange: .inf
   ShadowType: None
-- !<SceneObject/06ed3151-0ae2-459d-b674-dfc79c667d36>
-  PrefabRemaps:
-    []
-  Name: Obtacles
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    - !<own> cca65e58-5b65-4b09-8747-98f4498e6cc6
-    - !<own> ddd0fadd-d951-4727-a8db-5a88d8ceee53
-    - !<own> 9b76570b-b43a-41e8-92e9-a8fc9e14cc37
-    - !<own> 43b5b9fa-89dc-49e1-97b6-60b5d542a770
-    - !<own> adecfba2-efe7-413e-813a-e0962095de2a
-    - !<own> 2d228b11-bfa8-4057-9f48-78b7c3cc0977
-    - !<own> 43344f37-572a-48f3-bd94-5f577bc61076
-    - !<own> 365daf1c-1b93-41bb-9791-3acdf608c123
-    - !<own> 70cbf003-8293-4691-8adc-323118822293
-  Components:
-    []
-- !<SceneObject/0c6792ae-7e4c-4aef-a412-ac71d4de9aec>
-  PrefabRemaps:
-    []
-  Name: Coin 7
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 50.000000, z: -5750.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> fbd3cf0b-627e-4327-b86b-4ec81fc7aa02
 - !<SceneObject/0ca7fbdf-39b1-4a3e-84d8-04b5bd612b23>
   PrefabRemaps:
     []
@@ -244,6 +207,51 @@
   BlendNormals: false
   BlendShapes:
     {}
+- !<SceneObject/10c2f3ce-6cdf-4694-ba52-239d18d91724>
+  PrefabRemaps:
+    []
+  Name: Physics World
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 121a4062-7d6e-41de-b8ca-7fbe68881ccd
+- !<WorldComponent/121a4062-7d6e-41de-b8ca-7fbe68881ccd>
+  PrefabRemaps:
+    []
+  Name: Physics World
+  Enabled: true
+  UpdateOrder: 0
+  Settings: !<reference> 7d66a7f6-765e-4348-b3a0-1268a870e50f
+- !<ScriptComponent/14a2f6ca-8afd-4524-abb3-087297fe8ab2>
+  PrefabRemaps:
+    []
+  Name: PlayerOverlapHandler
+  Enabled: true
+  ScriptAsset: !<reference> 0ed7b1a7-1a02-49ce-95cc-2ae1128d568e
+  ScriptInputsDefault:
+    invulnerabilityTime: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      playerCollider: !<reference.ColliderComponent> 6707e9b1-592b-4776-a574-6869790efd44
+      gameController: !<reference.ScriptComponent> f4f88c7c-2688-41e9-9db2-8f1e96af7f03
+      livesService: !<reference.ScriptComponent> 342123b6-491d-4511-bbbc-4b48ecd0e51f
+      scoreService: !<reference.ScriptComponent> 2ded7d10-1f34-4f66-b718-19ebb6cfcd92
+      playerJump: !<reference.ScriptComponent> 4f636fc2-20dc-44d2-83e6-b136a2af5f5c
+      runnerSpawner: !<reference.ScriptComponent> 1ff33442-6a6c-4276-9c65-55dac4256a81
+      playerVisual: !<reference.SceneObject> 659d8459-95a7-455d-a73c-06c5527ae230
+      invulnerabilityTime: !<float> 1.000000
+  ScriptTypes:
+    "":
+      {}
 - !<Text/16d0c9b9-f8f0-4371-b72d-362d41817683>
   PrefabRemaps:
     []
@@ -328,46 +336,21 @@
     CapitalizationOverride: None
   DepthTest: false
   TwoSided: false
-- !<RenderMeshVisual/180f0122-7622-4b96-9e48-36d4f41f2963>
+- !<SceneObject/18832e64-042d-4d69-b56d-07714293ee39>
   PrefabRemaps:
     []
-  Name: component_13
+  Name: RuntimeObjects
   Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> 685ddc78-e349-4151-8fcd-34f0bb11e29f
-  Mesh: !<reference> af70b728-1cb4-4504-af81-20bdc4df18c2
-  Skin: !<reference> 00000000-0000-0000-0000-000000000000
-  BlendShapesEnabled: true
-  BlendNormals: false
-  BlendShapes:
-    {}
-- !<RenderMeshVisual/1b25f4e3-aaf9-41b5-872f-5a0371a9765d>
-  PrefabRemaps:
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
     []
-  Name: component_20
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> cba9077a-c9da-4d11-b78d-b09a7a88e0d4
-  Mesh: !<reference> 35846f73-e25e-4117-8a00-8afefa614faf
-  Skin: !<reference> 00000000-0000-0000-0000-000000000000
-  BlendShapesEnabled: true
-  BlendNormals: false
-  BlendShapes:
-    {}
+  Components:
+    []
 - !<SceneObject/1f249394-450e-4f51-b1c4-a849a888f6f0>
   PrefabRemaps:
     []
@@ -383,6 +366,38 @@
     []
   Components:
     - !<own> 342123b6-491d-4511-bbbc-4b48ecd0e51f
+- !<ScriptComponent/1ff33442-6a6c-4276-9c65-55dac4256a81>
+  PrefabRemaps:
+    []
+  Name: RunnerSpawner
+  Enabled: true
+  ScriptAsset: !<reference> 497b7dc8-f8d2-4963-a4b2-c3efbc895ad4
+  ScriptInputsDefault:
+    spawnStartZ: true
+    despawnZ: true
+    obstacleY: true
+    runtimeSpawnZ: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      gameController: !<reference.ScriptComponent> f4f88c7c-2688-41e9-9db2-8f1e96af7f03
+      difficultyService: !<reference.ScriptComponent> 3414df1a-ef64-4783-b884-98a8628a8f8f
+      obstaclePrefab: !<reference.ObjectPrefab> 28c95606-ddcf-4118-9724-5f78a312d771
+      coinPrefab: !<reference.ObjectPrefab> 00956e22-3d9a-494e-8c02-68ad5f6def78
+      runtimeRoot: !<reference.SceneObject> 18832e64-042d-4d69-b56d-07714293ee39
+      obstaclePoolSize: 24
+      coinPoolSize: 110
+      laneDistance: !<float> 200.000000
+      spawnStartZ: !<float> -3500.000000
+      rowSpacing: !<float> 500.000000
+      despawnZ: !<float> 1200.000000
+      obstacleY: !<float> -40.000000
+      coinY: !<float> 50.000000
+      runtimeSpawnZ: !<float> -8000.000000
+  ScriptTypes:
+    "":
+      {}
 - !<Camera/20f38435-21fb-4818-bf70-299a3223a958>
   PrefabRemaps:
     []
@@ -414,41 +429,6 @@
   MaskTexture: !<reference> 00000000-0000-0000-0000-000000000000
   RayTracing: !<reference> 00000000-0000-0000-0000-000000000000
   DevicePropertiesSource: !<reference> 00000000-0000-0000-0000-000000000000
-- !<SceneObject/226c70ef-cfcd-4f7a-8a46-6ca6e6535e3f>
-  PrefabRemaps:
-    []
-  Name: Coin 3
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: -200.000000, y: 50.000000, z: -4250.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 1b25f4e3-aaf9-41b5-872f-5a0371a9765d
-- !<RenderMeshVisual/23859098-ac3f-4901-9b84-daf2d097edb8>
-  PrefabRemaps:
-    []
-  Name: component_13
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> 685ddc78-e349-4151-8fcd-34f0bb11e29f
-  Mesh: !<reference> af70b728-1cb4-4504-af81-20bdc4df18c2
-  Skin: !<reference> 00000000-0000-0000-0000-000000000000
-  BlendShapesEnabled: true
-  BlendNormals: false
-  BlendShapes:
-    {}
 - !<SceneObject/23998360-1a99-43f9-950e-06e84fed9153>
   PrefabRemaps:
     []
@@ -464,21 +444,6 @@
     []
   Components:
     - !<own> 851bd843-2a76-48e2-9fb1-51d87774b9bd
-- !<SceneObject/25f6e024-777c-4803-9091-826261250302>
-  PrefabRemaps:
-    []
-  Name: Coin 8
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 200.000000, y: 50.000000, z: -6250.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 5d0955e6-cd50-4097-a198-21a5928b1776
 - !<SceneObject/275a952d-f181-44fd-8ebf-aec4ebdc314a>
   PrefabRemaps:
     []
@@ -486,7 +451,7 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Position: {x: 0.000000, y: 41.359848, z: 0.000000}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     Scale: {x: 1.500000, y: 1.500000, z: 1.500000}
     HasSegmentScaleCompensation: false
@@ -495,6 +460,9 @@
   Components:
     - !<own> 4ba20141-33c9-40f8-9213-5519d19d1aca
     - !<own> 4f636fc2-20dc-44d2-83e6-b136a2af5f5c
+    - !<own> 6707e9b1-592b-4776-a574-6869790efd44
+    - !<own> 14a2f6ca-8afd-4524-abb3-087297fe8ab2
+    - !<own> 7ac47f37-7b6c-4b3a-ba06-9dfcd10daa2a
 - !<SceneObject/2a8585eb-45bd-4b02-8a6a-a9bb5ed0ea95>
   PrefabRemaps:
     []
@@ -510,55 +478,6 @@
     []
   Components:
     - !<own> d817c9c6-798a-40cb-9a72-609295427894
-- !<ScriptComponent/2cb34cda-19e3-453f-b9b2-fffaa09ddca6>
-  PrefabRemaps:
-    []
-  Name: ObstacleCollision
-  Enabled: true
-  ScriptAsset: !<reference> 5bbc048f-f5d0-4de2-9243-efeba97933c3
-  ScriptInputsDefault:
-    invulnerabilityTime: true
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      gameController: !<reference.ScriptComponent> f4f88c7c-2688-41e9-9db2-8f1e96af7f03
-      livesService: !<reference.ScriptComponent> 342123b6-491d-4511-bbbc-4b48ecd0e51f
-      playerJump: !<reference.ScriptComponent> 4f636fc2-20dc-44d2-83e6-b136a2af5f5c
-      playerRoot: !<reference.SceneObject> 275a952d-f181-44fd-8ebf-aec4ebdc314a
-      playerVisual: !<reference.SceneObject> 659d8459-95a7-455d-a73c-06c5527ae230
-      obstacles: !<reference.SceneObject[]>
-        - !<reference> cca65e58-5b65-4b09-8747-98f4498e6cc6
-        - !<reference> ddd0fadd-d951-4727-a8db-5a88d8ceee53
-        - !<reference> 9b76570b-b43a-41e8-92e9-a8fc9e14cc37
-        - !<reference> 43b5b9fa-89dc-49e1-97b6-60b5d542a770
-        - !<reference> adecfba2-efe7-413e-813a-e0962095de2a
-        - !<reference> 2d228b11-bfa8-4057-9f48-78b7c3cc0977
-        - !<reference> 43344f37-572a-48f3-bd94-5f577bc61076
-        - !<reference> 365daf1c-1b93-41bb-9791-3acdf608c123
-        - !<reference> 70cbf003-8293-4691-8adc-323118822293
-      playerZ: !<float> 0.000000
-      hitDistanceZ: !<float> 20.000000
-      hitDistanceX: !<float> 40.000000
-      invulnerabilityTime: !<float> 1.000000
-  ScriptTypes:
-    "":
-      {}
-- !<SceneObject/2d228b11-bfa8-4057-9f48-78b7c3cc0977>
-  PrefabRemaps:
-    []
-  Name: road_barrier_white_orange_bitmoji 3
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: -40.000000, z: -5000.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 2.000000, y: 2.000000, z: 2.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> d05f6f47-39b1-472f-99b9-0d8d423f47f9
 - !<ScriptComponent/2ded7d10-1f34-4f66-b718-19ebb6cfcd92>
   PrefabRemaps:
     []
@@ -705,111 +624,6 @@
     - !<own> 74ef7dca-1946-4a6d-9888-5409b27ea956
   Components:
     []
-- !<RenderMeshVisual/353e5259-1e30-4078-8530-af73802d0b31>
-  PrefabRemaps:
-    []
-  Name: component_20
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> cba9077a-c9da-4d11-b78d-b09a7a88e0d4
-  Mesh: !<reference> 35846f73-e25e-4117-8a00-8afefa614faf
-  Skin: !<reference> 00000000-0000-0000-0000-000000000000
-  BlendShapesEnabled: true
-  BlendNormals: false
-  BlendShapes:
-    {}
-- !<SceneObject/365daf1c-1b93-41bb-9791-3acdf608c123>
-  PrefabRemaps:
-    []
-  Name: road_barrier_white_orange_bitmoji 7
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: -200.000000, y: -40.000000, z: -6000.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 2.000000, y: 2.000000, z: 2.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 39833f5e-ff18-4193-9069-c8e167a30b5d
-- !<RenderMeshVisual/39833f5e-ff18-4193-9069-c8e167a30b5d>
-  PrefabRemaps:
-    []
-  Name: component_13
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> 685ddc78-e349-4151-8fcd-34f0bb11e29f
-  Mesh: !<reference> af70b728-1cb4-4504-af81-20bdc4df18c2
-  Skin: !<reference> 00000000-0000-0000-0000-000000000000
-  BlendShapesEnabled: true
-  BlendNormals: false
-  BlendShapes:
-    {}
-- !<RenderMeshVisual/3dbaa0eb-3baa-4748-ac5b-dcccdbf25194>
-  PrefabRemaps:
-    []
-  Name: component_13
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> 685ddc78-e349-4151-8fcd-34f0bb11e29f
-  Mesh: !<reference> af70b728-1cb4-4504-af81-20bdc4df18c2
-  Skin: !<reference> 00000000-0000-0000-0000-000000000000
-  BlendShapesEnabled: true
-  BlendNormals: false
-  BlendShapes:
-    {}
-- !<SceneObject/43344f37-572a-48f3-bd94-5f577bc61076>
-  PrefabRemaps:
-    []
-  Name: road_barrier_white_orange_bitmoji 4
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: -40.000000, z: -5500.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 2.000000, y: 2.000000, z: 2.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 3dbaa0eb-3baa-4748-ac5b-dcccdbf25194
-- !<SceneObject/43b5b9fa-89dc-49e1-97b6-60b5d542a770>
-  PrefabRemaps:
-    []
-  Name: road_barrier_white_orange_bitmoji 6
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 200.000000, y: -40.000000, z: -3500.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 2.000000, y: 2.000000, z: 2.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> f5cda42f-cf33-4ae1-912d-b421e1a48aea
 - !<SceneObject/4553af30-8824-48e2-a524-5d0af4a1f09f>
   PrefabRemaps:
     []
@@ -874,36 +688,6 @@
   ScriptTypes:
     "":
       {}
-- !<SceneObject/5193d412-bc9a-4f6f-9684-926040c0184f>
-  PrefabRemaps:
-    []
-  Name: Coin 1
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 50.000000, z: -2750.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 88ae59a3-1c99-4b0b-b44b-ae36d1fbfdf2
-- !<SceneObject/53c84e36-08d2-4f94-b853-172ce7e335c0>
-  PrefabRemaps:
-    []
-  Name: Coin 2
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: -200.000000, y: 50.000000, z: -3750.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 6b2b02c6-4ade-407e-a3e2-c5bfeb78c266
 - !<SceneObject/59d1eec0-58b8-43a1-bc08-f34366623603>
   PrefabRemaps:
     []
@@ -920,46 +704,6 @@
   Components:
     - !<own> 6b458fd0-688e-4a48-81e9-01e791155cb2
     - !<own> 6a5e556c-3b97-4553-9190-4e4640ce7c39
-- !<RenderMeshVisual/5bc01871-5eea-4f41-9c1b-b7237a9944a3>
-  PrefabRemaps:
-    []
-  Name: component_13
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> 685ddc78-e349-4151-8fcd-34f0bb11e29f
-  Mesh: !<reference> af70b728-1cb4-4504-af81-20bdc4df18c2
-  Skin: !<reference> 00000000-0000-0000-0000-000000000000
-  BlendShapesEnabled: true
-  BlendNormals: false
-  BlendShapes:
-    {}
-- !<RenderMeshVisual/5d0955e6-cd50-4097-a198-21a5928b1776>
-  PrefabRemaps:
-    []
-  Name: component_20
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> cba9077a-c9da-4d11-b78d-b09a7a88e0d4
-  Mesh: !<reference> 35846f73-e25e-4117-8a00-8afefa614faf
-  Skin: !<reference> 00000000-0000-0000-0000-000000000000
-  BlendShapesEnabled: true
-  BlendNormals: false
-  BlendShapes:
-    {}
 - !<ScriptComponent/656cdfe5-c548-4400-af34-4c6b3c3077f2>
   PrefabRemaps:
     []
@@ -983,7 +727,7 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 20.000000, z: 0.000000}
+    Position: {x: 0.000000, y: -57.000000, z: 0.000000}
     Rotation: {x: 0.000000, y: 180.000000, z: 0.000000}
     Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
@@ -993,6 +737,24 @@
     - !<own> a3baacd5-7a43-4072-ba45-f72145cd3c5c
     - !<own> 9113d24d-2537-4074-9e12-2d39fe6dd5fd
     - !<own> 8120a294-765b-4280-a313-ee0b300a98c2
+- !<ColliderComponent/6707e9b1-592b-4776-a574-6869790efd44>
+  PrefabRemaps:
+    []
+  Name: Physics Collider
+  Enabled: true
+  Shape: !<Box>
+    FitVisual: false
+    Size: {x: 40.000000, y: 110.000000, z: 15.000000}
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 4686758f-bd55-4012-a649-23f447fa5632
+  WorldSettings: !<reference> 7d66a7f6-765e-4348-b3a0-1268a870e50f
+  EnableSmoothing: true
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: false
 - !<ScreenRegionComponent/6a5e556c-3b97-4553-9190-4e4640ce7c39>
   PrefabRemaps:
     []
@@ -1000,26 +762,6 @@
   Enabled: true
   ScreenRegionType: FullFrame
   ResizeWithKeyboard: false
-- !<RenderMeshVisual/6b2b02c6-4ade-407e-a3e2-c5bfeb78c266>
-  PrefabRemaps:
-    []
-  Name: component_20
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> cba9077a-c9da-4d11-b78d-b09a7a88e0d4
-  Mesh: !<reference> 35846f73-e25e-4117-8a00-8afefa614faf
-  Skin: !<reference> 00000000-0000-0000-0000-000000000000
-  BlendShapesEnabled: true
-  BlendNormals: false
-  BlendShapes:
-    {}
 - !<ScreenTransform/6b458fd0-688e-4a48-81e9-01e791155cb2>
   PrefabRemaps:
     []
@@ -1076,25 +818,9 @@
     HasSegmentScaleCompensation: false
   Children:
     - !<own> 865e3d4e-e222-41a8-8992-71532a3c0866
-    - !<own> 06ed3151-0ae2-459d-b674-dfc79c667d36
-    - !<own> c080aed6-86f6-4968-a680-e1a3ba075a60
+    - !<own> 18832e64-042d-4d69-b56d-07714293ee39
   Components:
     []
-- !<SceneObject/70cbf003-8293-4691-8adc-323118822293>
-  PrefabRemaps:
-    []
-  Name: road_barrier_white_orange_bitmoji 8
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 200.000000, y: -40.000000, z: -6500.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 2.000000, y: 2.000000, z: 2.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> f7bb5302-2da0-4db8-b504-147791bce439
 - !<SceneObject/74ef7dca-1946-4a6d-9888-5409b27ea956>
   PrefabRemaps:
     []
@@ -1142,26 +868,29 @@
   ScriptTypes:
     "":
       {}
-- !<RenderMeshVisual/7cc18f27-4bb7-41ca-9075-503cb95f3df4>
+- !<BodyComponent/7ac47f37-7b6c-4b3a-ba06-9dfcd10daa2a>
   PrefabRemaps:
     []
-  Name: component_20
+  Name: Physics Body
   Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> cba9077a-c9da-4d11-b78d-b09a7a88e0d4
-  Mesh: !<reference> 35846f73-e25e-4117-8a00-8afefa614faf
-  Skin: !<reference> 00000000-0000-0000-0000-000000000000
-  BlendShapesEnabled: true
-  BlendNormals: false
-  BlendShapes:
-    {}
+  Shape: !<Sphere>
+    FitVisual: true
+    Radius: 6.000000
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 4686758f-bd55-4012-a649-23f447fa5632
+  WorldSettings: !<reference> 7d66a7f6-765e-4348-b3a0-1268a870e50f
+  EnableSmoothing: false
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: false
+  Dynamic: false
+  BodySetting: Density
+  BodySettingValue: 1.000000
+  Damping: 0.000000
+  AngularDamping: 0.000000
 - !<SceneObject/80ae0078-7fe4-4d49-9164-28f8178c0030>
   PrefabRemaps:
     []
@@ -1216,56 +945,6 @@
   ScriptTypes:
     "":
       {}
-- !<ScriptComponent/821826d3-368d-46d0-8255-e8d3d6acec38>
-  PrefabRemaps:
-    []
-  Name: CollectibleMover
-  Enabled: true
-  ScriptAsset: !<reference> d3090573-bdc5-4542-921b-6cd5b8d1635e
-  ScriptInputsDefault:
-    moveSpeed: true
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      difficultyService: !<reference.ScriptComponent> 3414df1a-ef64-4783-b884-98a8628a8f8f
-      gameController: !<reference.ScriptComponent> f4f88c7c-2688-41e9-9db2-8f1e96af7f03
-      scoreService: !<reference.ScriptComponent> 2ded7d10-1f34-4f66-b718-19ebb6cfcd92
-      playerRoot: !<reference.SceneObject> 275a952d-f181-44fd-8ebf-aec4ebdc314a
-      collectibles: !<reference.SceneObject[]>
-        - !<reference> d645cd93-be1a-41e2-bb77-9b9b24fba1ec
-        - !<reference> 53c84e36-08d2-4f94-b853-172ce7e335c0
-        - !<reference> 226c70ef-cfcd-4f7a-8a46-6ca6e6535e3f
-        - !<reference> 90a565a2-9fcc-4e40-980c-6716fc679a63
-        - !<reference> 849388ce-f1fa-43f0-bddc-159c16ba55dd
-        - !<reference> 8fd00243-c2c5-45c9-801a-c80086a60b1a
-        - !<reference> 0c6792ae-7e4c-4aef-a412-ac71d4de9aec
-        - !<reference> 25f6e024-777c-4803-9091-826261250302
-        - !<reference> 5193d412-bc9a-4f6f-9684-926040c0184f
-      moveSpeed: !<float> 700.000000
-      despawnZ: !<float> 500.000000
-      respawnZ: !<float> -3750.000000
-      laneDistance: !<float> 200.000000
-      collectDistanceZ: !<float> 20.000000
-      collectDistanceX: !<float> 40.000000
-  ScriptTypes:
-    "":
-      {}
-- !<SceneObject/849388ce-f1fa-43f0-bddc-159c16ba55dd>
-  PrefabRemaps:
-    []
-  Name: Coin 5
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 200.000000, y: 50.000000, z: -5250.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 7cc18f27-4bb7-41ca-9075-503cb95f3df4
 - !<RenderMeshVisual/851bd843-2a76-48e2-9fb1-51d87774b9bd>
   PrefabRemaps:
     []
@@ -1305,26 +984,6 @@
     - !<own> 23998360-1a99-43f9-950e-06e84fed9153
   Components:
     []
-- !<RenderMeshVisual/88ae59a3-1c99-4b0b-b44b-ae36d1fbfdf2>
-  PrefabRemaps:
-    []
-  Name: component_20
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> cba9077a-c9da-4d11-b78d-b09a7a88e0d4
-  Mesh: !<reference> 35846f73-e25e-4117-8a00-8afefa614faf
-  Skin: !<reference> 00000000-0000-0000-0000-000000000000
-  BlendShapesEnabled: true
-  BlendNormals: false
-  BlendShapes:
-    {}
 - !<SceneObject/8e87010c-e87a-48eb-95d2-092cef485ac7>
   PrefabRemaps:
     []
@@ -1340,36 +999,6 @@
     []
   Components:
     - !<own> f4f88c7c-2688-41e9-9db2-8f1e96af7f03
-- !<SceneObject/8fd00243-c2c5-45c9-801a-c80086a60b1a>
-  PrefabRemaps:
-    []
-  Name: Coin 6
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 50.000000, z: -6750.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> a9494ecd-8040-4e96-bcb7-e5e455827977
-- !<SceneObject/90a565a2-9fcc-4e40-980c-6716fc679a63>
-  PrefabRemaps:
-    []
-  Name: Coin 4
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 50.000000, z: -4750.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 353e5259-1e30-4078-8530-af73802d0b31
 - !<AnimationPlayer/9113d24d-2537-4074-9e12-2d39fe6dd5fd>
   PrefabRemaps:
     []
@@ -1508,21 +1137,6 @@
   BlendNormals: false
   BlendShapes:
     {}
-- !<SceneObject/9b76570b-b43a-41e8-92e9-a8fc9e14cc37>
-  PrefabRemaps:
-    []
-  Name: road_barrier_white_orange_bitmoji 2
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: -40.000000, z: -4000.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 2.000000, y: 2.000000, z: 2.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> f0314984-711d-4221-bd9c-99a4fc7ca05d
 - !<Image/9f302dbe-673a-4f30-97db-ad4cdad05640>
   PrefabRemaps:
     []
@@ -1622,41 +1236,6 @@
     []
   Components:
     - !<own> d85ba71f-196b-4d0a-af09-f4a6666ea76d
-- !<RenderMeshVisual/a9494ecd-8040-4e96-bcb7-e5e455827977>
-  PrefabRemaps:
-    []
-  Name: component_20
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> cba9077a-c9da-4d11-b78d-b09a7a88e0d4
-  Mesh: !<reference> 35846f73-e25e-4117-8a00-8afefa614faf
-  Skin: !<reference> 00000000-0000-0000-0000-000000000000
-  BlendShapesEnabled: true
-  BlendNormals: false
-  BlendShapes:
-    {}
-- !<SceneObject/adecfba2-efe7-413e-813a-e0962095de2a>
-  PrefabRemaps:
-    []
-  Name: road_barrier_white_orange_bitmoji 5
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: -200.000000, y: -40.000000, z: -4500.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 2.000000, y: 2.000000, z: 2.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 5bc01871-5eea-4f41-9c1b-b7237a9944a3
 - !<SceneObject/ae5336bb-88b2-4166-8d90-7d3313c158ca>
   PrefabRemaps:
     []
@@ -1687,9 +1266,7 @@
     []
   Components:
     - !<own> 2f52422f-d364-403a-8178-9f8b0749f472
-    - !<own> 2cb34cda-19e3-453f-b9b2-fffaa09ddca6
-    - !<own> bc5d3801-8086-440e-8a62-4cb199c97450
-    - !<own> 821826d3-368d-46d0-8255-e8d3d6acec38
+    - !<own> 1ff33442-6a6c-4276-9c65-55dac4256a81
 - !<SceneObject/b7b7acc8-ba8f-47ec-9d5a-92920ddf0825>
   PrefabRemaps:
     []
@@ -1703,60 +1280,6 @@
     HasSegmentScaleCompensation: false
   Children:
     - !<own> 4553af30-8824-48e2-a524-5d0af4a1f09f
-  Components:
-    []
-- !<ScriptComponent/bc5d3801-8086-440e-8a62-4cb199c97450>
-  PrefabRemaps:
-    []
-  Name: ObstacleMover
-  Enabled: true
-  ScriptAsset: !<reference> 5ea6965b-172d-4da2-a7c6-3ed556caaee8
-  ScriptInputsDefault:
-    moveSpeed: true
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      difficultyService: !<reference.ScriptComponent> 3414df1a-ef64-4783-b884-98a8628a8f8f
-      gameController: !<reference.ScriptComponent> f4f88c7c-2688-41e9-9db2-8f1e96af7f03
-      obstacles: !<reference.SceneObject[]>
-        - !<reference> cca65e58-5b65-4b09-8747-98f4498e6cc6
-        - !<reference> ddd0fadd-d951-4727-a8db-5a88d8ceee53
-        - !<reference> 9b76570b-b43a-41e8-92e9-a8fc9e14cc37
-        - !<reference> 43b5b9fa-89dc-49e1-97b6-60b5d542a770
-        - !<reference> adecfba2-efe7-413e-813a-e0962095de2a
-        - !<reference> 2d228b11-bfa8-4057-9f48-78b7c3cc0977
-        - !<reference> 43344f37-572a-48f3-bd94-5f577bc61076
-        - !<reference> 365daf1c-1b93-41bb-9791-3acdf608c123
-        - !<reference> 70cbf003-8293-4691-8adc-323118822293
-      moveSpeed: !<float> 700.000000
-      despawnZ: !<float> 500.000000
-      respawnZ: !<float> -3500.000000
-      laneDistance: !<float> 200.000000
-  ScriptTypes:
-    "":
-      {}
-- !<SceneObject/c080aed6-86f6-4968-a680-e1a3ba075a60>
-  PrefabRemaps:
-    []
-  Name: Collectibles
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    - !<own> d645cd93-be1a-41e2-bb77-9b9b24fba1ec
-    - !<own> 53c84e36-08d2-4f94-b853-172ce7e335c0
-    - !<own> 226c70ef-cfcd-4f7a-8a46-6ca6e6535e3f
-    - !<own> 90a565a2-9fcc-4e40-980c-6716fc679a63
-    - !<own> 849388ce-f1fa-43f0-bddc-159c16ba55dd
-    - !<own> 8fd00243-c2c5-45c9-801a-c80086a60b1a
-    - !<own> 0c6792ae-7e4c-4aef-a412-ac71d4de9aec
-    - !<own> 25f6e024-777c-4803-9091-826261250302
-    - !<own> 5193d412-bc9a-4f6f-9684-926040c0184f
   Components:
     []
 - !<SceneObject/c0d272b6-b1d5-4685-a551-566d133f753e>
@@ -1921,21 +1444,6 @@
   DepthFilter: true
   MeshVisuals:
     []
-- !<SceneObject/cca65e58-5b65-4b09-8747-98f4498e6cc6>
-  PrefabRemaps:
-    []
-  Name: road_barrier_white_orange_bitmoji
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: -40.000000, z: -2500.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 2.000000, y: 2.000000, z: 2.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 23859098-ac3f-4901-9b84-daf2d097edb8
 - !<SceneObject/ce4b456d-f8d8-40d2-be75-1c3ad3beb261>
   PrefabRemaps:
     []
@@ -1951,26 +1459,6 @@
     []
   Components:
     - !<own> 32f3efc8-7169-4c03-8dfc-7ed9ad3033df
-- !<RenderMeshVisual/d05f6f47-39b1-472f-99b9-0d8d423f47f9>
-  PrefabRemaps:
-    []
-  Name: component_13
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> 685ddc78-e349-4151-8fcd-34f0bb11e29f
-  Mesh: !<reference> af70b728-1cb4-4504-af81-20bdc4df18c2
-  Skin: !<reference> 00000000-0000-0000-0000-000000000000
-  BlendShapesEnabled: true
-  BlendNormals: false
-  BlendShapes:
-    {}
 - !<Text/d202b9e5-4cee-420a-ad09-8792a3607515>
   PrefabRemaps:
     []
@@ -2090,21 +1578,6 @@
     []
   Components:
     - !<own> d202b9e5-4cee-420a-ad09-8792a3607515
-- !<SceneObject/d645cd93-be1a-41e2-bb77-9b9b24fba1ec>
-  PrefabRemaps:
-    []
-  Name: Coin
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 200.000000, y: 50.000000, z: -3250.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> faa59e04-a239-4c09-8684-4a03f4278aba
 - !<Text/d817c9c6-798a-40cb-9a72-609295427894>
   PrefabRemaps:
     []
@@ -2273,21 +1746,6 @@
     CapitalizationOverride: None
   DepthTest: false
   TwoSided: false
-- !<SceneObject/ddd0fadd-d951-4727-a8db-5a88d8ceee53>
-  PrefabRemaps:
-    []
-  Name: road_barrier_white_orange_bitmoji 1
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: -40.000000, z: -3000.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 2.000000, y: 2.000000, z: 2.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 180f0122-7622-4b96-9e48-36d4f41f2963
 - !<ScriptComponent/ed79b94c-030a-4361-a653-ce261bddcf92>
   PrefabRemaps:
     []
@@ -2326,26 +1784,6 @@
   ScriptTypes:
     "":
       {}
-- !<RenderMeshVisual/f0314984-711d-4221-bd9c-99a4fc7ca05d>
-  PrefabRemaps:
-    []
-  Name: component_13
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> 685ddc78-e349-4151-8fcd-34f0bb11e29f
-  Mesh: !<reference> af70b728-1cb4-4504-af81-20bdc4df18c2
-  Skin: !<reference> 00000000-0000-0000-0000-000000000000
-  BlendShapesEnabled: true
-  BlendNormals: false
-  BlendShapes:
-    {}
 - !<RenderMeshVisual/f0414145-73f9-40b2-a283-4ec120a94d5f>
   PrefabRemaps:
     []
@@ -2386,6 +1824,8 @@
       collectibleMover: !<reference.ScriptComponent> 821826d3-368d-46d0-8255-e8d3d6acec38
       difficultyService: !<reference.ScriptComponent> 3414df1a-ef64-4783-b884-98a8628a8f8f
       obstacleCollision: !<reference.ScriptComponent> 2cb34cda-19e3-453f-b9b2-fffaa09ddca6
+      playerOverlapHandler: !<reference.ScriptComponent> 14a2f6ca-8afd-4524-abb3-087297fe8ab2
+      runnerSpawner: !<reference.ScriptComponent> 1ff33442-6a6c-4276-9c65-55dac4256a81
       interaction: !<reference.InteractionComponent> 6d13992a-4219-4609-9b4b-9d7b9fa2f3e0
   ScriptTypes:
     "":
@@ -2421,86 +1861,6 @@
     []
   Components:
     - !<own> 99433e1e-3006-4a3b-9abd-12148477fb7b
-- !<RenderMeshVisual/f5cda42f-cf33-4ae1-912d-b421e1a48aea>
-  PrefabRemaps:
-    []
-  Name: component_13
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> 685ddc78-e349-4151-8fcd-34f0bb11e29f
-  Mesh: !<reference> af70b728-1cb4-4504-af81-20bdc4df18c2
-  Skin: !<reference> 00000000-0000-0000-0000-000000000000
-  BlendShapesEnabled: true
-  BlendNormals: false
-  BlendShapes:
-    {}
-- !<RenderMeshVisual/f7bb5302-2da0-4db8-b504-147791bce439>
-  PrefabRemaps:
-    []
-  Name: component_13
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> 685ddc78-e349-4151-8fcd-34f0bb11e29f
-  Mesh: !<reference> af70b728-1cb4-4504-af81-20bdc4df18c2
-  Skin: !<reference> 00000000-0000-0000-0000-000000000000
-  BlendShapesEnabled: true
-  BlendNormals: false
-  BlendShapes:
-    {}
-- !<RenderMeshVisual/faa59e04-a239-4c09-8684-4a03f4278aba>
-  PrefabRemaps:
-    []
-  Name: component_20
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> cba9077a-c9da-4d11-b78d-b09a7a88e0d4
-  Mesh: !<reference> 35846f73-e25e-4117-8a00-8afefa614faf
-  Skin: !<reference> 00000000-0000-0000-0000-000000000000
-  BlendShapesEnabled: true
-  BlendNormals: false
-  BlendShapes:
-    {}
-- !<RenderMeshVisual/fbd3cf0b-627e-4327-b86b-4ec81fc7aa02>
-  PrefabRemaps:
-    []
-  Name: component_20
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> cba9077a-c9da-4d11-b78d-b09a7a88e0d4
-  Mesh: !<reference> 35846f73-e25e-4117-8a00-8afefa614faf
-  Skin: !<reference> 00000000-0000-0000-0000-000000000000
-  BlendShapesEnabled: true
-  BlendNormals: false
-  BlendShapes:
-    {}
 - !<Text/fe7c88ef-5111-4c6c-bc47-5d7550d67b2a>
   PrefabRemaps:
     []

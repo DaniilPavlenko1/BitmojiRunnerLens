@@ -1,0 +1,68 @@
+- !<AssetImportMetadata/7872ac92-1655-435c-9208-4fd887000d86>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 497b7dc8-f8d2-4963-a4b2-c3efbc895ad4
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 497b7dc8-f8d2-4963-a4b2-c3efbc895ad4
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> 163107ca-8352-4195-a8e4-533b234c8de2
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/163107ca-8352-4195-a8e4-533b234c8de2>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: b212facb-2dbb-4200-a062-adbace9d4da0
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    coinPoolSize: false
+    coinPrefab: false
+    coinY: false
+    despawnZ: false
+    difficultyService: false
+    gameController: false
+    laneDistance: false
+    obstaclePoolSize: false
+    obstaclePrefab: false
+    obstacleY: false
+    rowSpacing: false
+    runtimeRoot: false
+    runtimeSpawnZ: false
+    spawnStartZ: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - gameController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      difficultyService: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      obstaclePrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      coinPrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      runtimeRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      obstaclePoolSize: 12
+      coinPoolSize: 30
+      laneDistance: !<float> 150.000000
+      spawnStartZ: !<float> -3500.000000
+      rowSpacing: !<float> 650.000000
+      despawnZ: !<float> 1200.000000
+      obstacleY: !<float> -40.000000
+      coinY: !<float> -15.000000
+      runtimeSpawnZ: !<float> -8000.000000
+  ScriptTypes:
+    -
+      {}

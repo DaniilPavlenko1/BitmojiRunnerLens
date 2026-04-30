@@ -1,35 +1,59 @@
-- !<AssetImportMetadata/a6299b78-9a28-4b34-a537-e33d64bcfc11>
+- !<AssetImportMetadata/06085cac-4b2f-40d8-aed9-ce23fc92a19d>
   ImportedAssetIds:
-    ObjectPrefab: !<reference> 2d5ee0e6-0877-4853-9372-b640eecaa979
+    ObjectPrefab: !<reference> 28c95606-ddcf-4118-9724-5f78a312d771
   ImporterName: ObjectPrefabImporter
-  PrimaryAsset: !<reference> 2d5ee0e6-0877-4853-9372-b640eecaa979
+  PrimaryAsset: !<reference> 28c95606-ddcf-4118-9724-5f78a312d771
   PackageType: NotAPackage
   LegacyPackagePolicy: ~
   ExtraData:
     {}
   AssetDataMap:
-    ObjectPrefab: !<own> fc870cb5-7bd7-4c7b-819a-dc2924ea177e
+    ObjectPrefab: !<own> b570d369-6b50-4f03-b1ce-839f4d34fd31
   DependentFiles:
     []
   ImporterSettings: !<AssetImporterSettings>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-- !<SceneObject/13a5ad71-8ce3-4cf2-4ce7-7f84c28a3af6>
+- !<BodyComponent/099f84be-3733-47b5-5971-8a839c9704c7>
   PrefabRemaps:
     []
-  Name: Obtacle
+  Name: Physics Body
   Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: -40.000000, z: 0.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 2.000000, y: 2.000000, z: 2.000000}
-    HasSegmentScaleCompensation: false
-  Children:
+  Shape: !<Box>
+    FitVisual: false
+    Size: {x: 70.000000, y: 120.000000, z: 50.000000}
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 4686758f-bd55-4012-a649-23f447fa5632
+  WorldSettings: !<reference> 7d66a7f6-765e-4348-b3a0-1268a870e50f
+  EnableSmoothing: false
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: false
+  Dynamic: false
+  BodySetting: Density
+  BodySettingValue: 1.000000
+  Damping: 0.000000
+  AngularDamping: 0.000000
+- !<ScriptComponent/48205458-0a1f-4444-5395-6f62898ffbfb>
+  PrefabRemaps:
     []
-  Components:
-    - !<own> 9e50ed1c-56da-4a6e-7eea-f51d17ead1af
-- !<RenderMeshVisual/9e50ed1c-56da-4a6e-7eea-f51d17ead1af>
+  Name: RunnerObjectTag
+  Enabled: true
+  ScriptAsset: !<reference> f68500c6-5bd4-455e-bcb7-621b26913f25
+  ScriptInputsDefault:
+    objectType: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      objectType: obstacle
+  ScriptTypes:
+    "":
+      {}
+- !<RenderMeshVisual/798f1b90-510d-45c5-456d-80ff5f780041>
   PrefabRemaps:
     []
   Name: component_13
@@ -49,8 +73,44 @@
   BlendNormals: false
   BlendShapes:
     {}
-- !<ObjectPrefabAssetData/fc870cb5-7bd7-4c7b-819a-dc2924ea177e>
-  Prototype: !<ObjectOwner/8ef7464d-b1fa-4af3-9eff-3bfe9defa82b>
+- !<ColliderComponent/9e8a5a52-bd35-4d60-5205-b51d6d01a3c2>
+  PrefabRemaps:
+    []
+  Name: Physics Collider
+  Enabled: true
+  Shape: !<Box>
+    FitVisual: false
+    Size: {x: 70.000000, y: 120.000000, z: 50.000000}
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 4686758f-bd55-4012-a649-23f447fa5632
+  WorldSettings: !<reference> 7d66a7f6-765e-4348-b3a0-1268a870e50f
+  EnableSmoothing: true
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: false
+- !<ObjectPrefabAssetData/b570d369-6b50-4f03-b1ce-839f4d34fd31>
+  Prototype: !<ObjectOwner/b1a79da2-3959-4938-90f3-b425684c8853>
     PackagePath: ""
     objects:
-      - !<own> 13a5ad71-8ce3-4cf2-4ce7-7f84c28a3af6
+      - !<own> b6f4eeba-a18f-4134-470d-5be85fe7215c
+- !<SceneObject/b6f4eeba-a18f-4134-470d-5be85fe7215c>
+  PrefabRemaps:
+    []
+  Name: Obtacle
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: -40.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 2.000000, y: 1.000000, z: 2.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 798f1b90-510d-45c5-456d-80ff5f780041
+    - !<own> 9e8a5a52-bd35-4d60-5205-b51d6d01a3c2
+    - !<own> 48205458-0a1f-4444-5395-6f62898ffbfb
+    - !<own> 099f84be-3733-47b5-5971-8a839c9704c7
