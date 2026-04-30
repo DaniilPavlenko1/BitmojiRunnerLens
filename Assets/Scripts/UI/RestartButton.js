@@ -23,8 +23,6 @@ function restartGame() {
     if (script.runnerSpawner)script.runnerSpawner.resetSpawner();
 
     script.gameController.resetGame();
-
-    print("Restart pressed");
 }
 
 script.createEvent("OnStartEvent").bind(function () {

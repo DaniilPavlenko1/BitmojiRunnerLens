@@ -8,7 +8,6 @@ var currentSpeed = 0;
 
 script.resetDifficulty = function () {
     currentSpeed = script.startSpeed;
-    print("Speed reset: " + currentSpeed);
 };
 
 script.getSpeed = function () {

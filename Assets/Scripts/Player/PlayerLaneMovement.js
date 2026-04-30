@@ -26,8 +26,6 @@ function moveToLane(laneIndex) {
 
     var direction = currentLane - previousLane;
 
-    print("Move to lane: " + currentLane);
-
     if (script.onLaneChanged && direction !== 0) {
         script.onLaneChanged(direction);
     }

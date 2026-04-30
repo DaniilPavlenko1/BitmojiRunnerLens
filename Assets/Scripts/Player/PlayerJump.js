@@ -18,8 +18,6 @@ script.jump = function () {
 
     var pos = script.playerRoot.getTransform().getLocalPosition();
     startY = pos.y;
-
-    print("Jump!");
 };
 
 script.isJumping = function () {

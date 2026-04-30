@@ -48,9 +48,7 @@ script.createEvent("TouchEndEvent").bind(function (eventData) {
             script.playerMovement.moveLeft();
         }
     }else {
-        // vertical swipe
         if (dy < -script.swipeThreshold) {
-            print("Swipe up detected");
 
             if (script.playerJump) {
                 script.playerJump.jump();

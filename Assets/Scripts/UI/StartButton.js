@@ -11,8 +11,6 @@ function startGame() {
     }
 
     script.gameController.startGame();
-
-    print("Tap anywhere start");
 }
 
 script.createEvent("OnStartEvent").bind(function () {

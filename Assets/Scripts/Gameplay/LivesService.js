@@ -6,7 +6,6 @@ var currentLives = script.maxLives;
 
 script.resetLives = function () {
     currentLives = script.maxLives;
-    print("Lives: " + currentLives);
 };
 
 script.takeDamage = function () {
@@ -15,8 +14,6 @@ script.takeDamage = function () {
     if (currentLives < 0) {
         currentLives = 0;
     }
-
-    print("Lives: " + currentLives);
 
     return currentLives;
 };

@@ -244,8 +244,6 @@ script.resetSpawner = function () {
     activeObjects = [];
     spawnTimer = 0;
     fillInitialRows();
-
-    print("RunnerSpawner reset");
 };
 
 script.getActiveObjects = function () {
@@ -254,7 +252,6 @@ script.getActiveObjects = function () {
 
 script.createEvent("OnStartEvent").bind(function () {
     if (!script.obstaclePrefab || !script.coinPrefab || !script.runtimeRoot) {
-        print("RunnerSpawner: missing prefab or runtime root");
         return;
     }
 

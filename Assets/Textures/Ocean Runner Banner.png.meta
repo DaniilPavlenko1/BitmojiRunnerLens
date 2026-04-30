@@ -14,5 +14,5 @@
   ImporterSettings: !<AssetImporterSettings>
     {}
   CompressionSettings: !<PerformanceCompressionSettings>
-    Level: Medium
+    Level: High
     Mipmap: false

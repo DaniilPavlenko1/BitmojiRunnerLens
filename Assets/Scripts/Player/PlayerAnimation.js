@@ -24,8 +24,6 @@ function play(name) {
 
     script.animationPlayer.stopAll();
     script.animationPlayer.playClipAt(name, 0);
-
-    print("Animation: " + name);
 }
 
 function playOverride(name, duration) {
@@ -38,8 +36,6 @@ function playOverride(name, duration) {
 
     script.animationPlayer.stopAll();
     script.animationPlayer.playClipAt(name, 0);
-
-    print("Animation override: " + name);
 }
 
 script.createEvent("OnStartEvent").bind(function () {

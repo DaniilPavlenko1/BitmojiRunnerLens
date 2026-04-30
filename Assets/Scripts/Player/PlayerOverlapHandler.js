@@ -102,7 +102,6 @@ function handleCoin(sceneObject, tag) {
 
     deactivateObject(sceneObject);
 
-    print("Coin collected by overlap");
     if (script.audioManager) {
         script.audioManager.playCoin();
     }
@@ -112,8 +111,6 @@ function handleObstacle(sceneObject, tag) {
     if (tag.isHandled && tag.isHandled()) {
         return;
     }
-
-
 
     if (invulnerabilityTimer > 0) {
         return;
@@ -141,7 +138,6 @@ function handleObstacle(sceneObject, tag) {
     invulnerabilityTimer = script.invulnerabilityTime;
     startBlink();
 
-    print("Obstacle hit by overlap");
     if (script.audioManager) {
         script.audioManager.playHit();
     }
@@ -159,9 +155,7 @@ function onOverlapEnter(eventData) {
 
     var otherObject = otherCollider.getSceneObject();
     var runnerObject = findRunnerObject(otherObject);
-    print("Overlap with: " + otherObject.name);
     if (!runnerObject) {
-        print("Overlap object has no RunnerObjectTag: " + otherObject.name);
         return;
     }
 
@@ -182,19 +176,14 @@ script.resetCollisionState = function () {
     blinkIntervalTimer = 0;
     blinkState = true;
     setPlayerVisible(true);
-
-    print("Overlap collision state reset");
 };
 
 script.createEvent("OnStartEvent").bind(function () {
     if (!script.playerCollider) {
-        print("PlayerOverlapHandler: playerCollider is missing");
         return;
     }
 
     script.playerCollider.onOverlapEnter.add(onOverlapEnter);
-
-    print("PlayerOverlapHandler initialized");
 });
 
 script.createEvent("UpdateEvent").bind(function () {
