@@ -1,0 +1,43 @@
+- !<ObjectPrefab/2d5ee0e6-0877-4853-9372-b640eecaa979>
+  PackagePath: ""
+  objects:
+    - !<own> 13a5ad71-8ce3-4cf2-b318-807b3d75c509
+  LazyLoading: false
+  RetainAssets: true
+  PreviewEnvironment: !<reference> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/13a5ad71-8ce3-4cf2-b318-807b3d75c509>
+  PrefabRemaps:
+    - 13a5ad71-8ce3-4cf2-b318-807b3d75c509: 13a5ad71-8ce3-4cf2-4ce7-7f84c28a3af6
+    - 9e50ed1c-56da-4a6e-8115-0ae2e8152e50: 9e50ed1c-56da-4a6e-7eea-f51d17ead1af
+  Name: Obtacle
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: -40.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 2.000000, y: 2.000000, z: 2.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 9e50ed1c-56da-4a6e-8115-0ae2e8152e50
+- !<RenderMeshVisual/9e50ed1c-56da-4a6e-8115-0ae2e8152e50>
+  PrefabRemaps:
+    []
+  Name: component_13
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 685ddc78-e349-4151-8fcd-34f0bb11e29f
+  Mesh: !<reference> af70b728-1cb4-4504-af81-20bdc4df18c2
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}

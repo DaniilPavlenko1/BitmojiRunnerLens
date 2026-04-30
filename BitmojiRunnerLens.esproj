@@ -28,7 +28,7 @@ metaInfo:
     - Web
   platformBundlesEnabled: false
   iconHash: 68aeb7802232a2b0b46a942fe9c93446
-  videoPreviewHash: ""
+  videoPreviewHash: 43b7a8727ff5b5467e8bfab1f6919507
   fromTemplateName: Default
   fromTemplateUrl: Lens Studio 5.20.0.26040820
   activationCamera: Front
