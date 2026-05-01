@@ -149,6 +149,15 @@ This project was built as a test task with focus on:
 
 ---
 
+## ⚠️ This project uses Git LFS for large assets.
+Please install Git LFS before cloning:
+https://git-lfs.com/
+
+Then run:
+git lfs pull
+
+---
+
 ## 👤 Author
 
 Daniil Pavlenko  
